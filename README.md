@@ -1,7 +1,7 @@
-### Digitale Kompetenzen
+## Digitale Kompetenzen
 In diesem Forschungsprojekt sollen Digitale Kompetenzen im Rahmen der Digitalen Mündigkeit untersucht werden.
 
-## Teammitglieder
+#### Teammitglieder
 nicibolt
 frepai
 kathiwa
@@ -9,10 +9,10 @@ Melina
 Pauline
 
 
-## Forschungsfrage
+#### Forschungsfrage
 Welchen Einfluss haben das Alter eines Nutzers einerseits und die KUT des Nutzers andererseits auf dessen digitalen Kompetenzen "Technikverständnis" und "Informationsmanagement" im Umgang mit sozialen Online-Netzwerken?
 
-## Faktorenraum
+#### Faktorenraum
 
 ![tooltip](images/DigitaleKompetenzen_FR_051118.png)
 
