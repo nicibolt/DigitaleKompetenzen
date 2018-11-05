@@ -15,7 +15,7 @@ Welchen Einfluss haben das Alter eines Nutzers einerseits und die KUT des Nutzer
 
 ##Faktorenraum
 
-![tooltip](images/DigitaleKompetenzen_FR_051118.jpg)
+![tooltip](images/DigitaleKompetenzen_FR_051118.png)
 
 *_Frühere Versionen:_*
 
@@ -25,7 +25,7 @@ Diese Version wurde am 05.11.2018 aus folgenden Gründen angepasst:
 * Zu wenige Nutzerfaktoren
 * Zu wenige mögliche Hypothesen
 
-![tooltip](images/DigitaleKompetenzen_FR_021118.jpg)
+![tooltip](images/DigitaleKompetenzen_FR_021118.png)
 
 Diese Version wurde am 02.11.2018 aus folgenden Gründen angepasst:
 
