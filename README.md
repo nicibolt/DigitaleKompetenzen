@@ -2,10 +2,11 @@
 In diesem Forschungsprojekt sollen Digitale Kompetenzen im Rahmen der Digitalen Mündigkeit untersucht werden.
 
 #### Teammitglieder
-nicibolt
+
 frepai
 kathiwa
 meleina
+nicibolt
 pauline05019
 
 #### Forschungsfrage
