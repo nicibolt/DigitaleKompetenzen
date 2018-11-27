@@ -8,6 +8,7 @@ kathiwa
 meleina
 nicibolt
 pauline05019
+tsheesy
 
 #### Forschungsfrage
 Welchen Einfluss haben das Alter eines Nutzers einerseits und die KUT des Nutzers andererseits auf dessen digitalen Kompetenzen "Technikverständnis" und "Informationsmanagement" im Umgang mit sozialen Online-Netzwerken?
