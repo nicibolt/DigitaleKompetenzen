@@ -1,74 +1,56 @@
 variable;text
-VAR1;Bitte geben Sie Ihr Alter in Jahren (Zahl) an. Open-Ended Response
-VAR2;Ich nutze folgendes soziales Online-Netzwerk: Facebook
-VAR3;X17 Instagram
-VAR4;X18 Twitter
-VAR5;X19 Snapchat
-VAR6;X20 Youtube
-VAR7;X21 Sonstiges (bitte angeben)_2
-VAR8;Bitte geben Sie an, inwieweit Sie den folgenden Aussagen zustimmen. Es macht mir Spaß, technische Systeme auszuprobieren.
-VAR9;X23 Technische Systeme machen mich unabhängig.
-VAR10;X24 Technische Systeme machen vieles umständlicher.
-VAR11;X25 Technische Systeme erleichtern mir den Alltag.
-VAR12;X26 Auch ohne Kaufabsicht informiere ich mich gerne über neue technische Systeme.
-VAR13;X27 Technische Systeme verringern den persönlichen Kontakt zu Anderen.
-VAR14;Bitte schätzen Sie Ihren Umgang mit technischen Problemen ein: Ich kann ziemlich viele der technischen Probleme, mit denen ich konfrontiert werde, alleine lösen.
-VAR15;X29 Technische Geräte sind oft undurchschaubar und schwer zu beherrschen.
-VAR16;X30 Es macht mir richtig Spaß, ein technisches Problem zu knacken.
-VAR17;X31 Weil ich mit bisherigen technischen Problemen gut zurecht gekommen bin, blicke ich auch künftigen technischen Problemen optimistisch entgegen.
-VAR18;X32 Ich fühle mich technischen Geräten gegenüber so hilflos, dass ich die Finger von ihnen lasse.
-VAR19;X33 Auch wenn Widerstände auftreten, bearbeite ich ein technisches Problem weiter.
-VAR20;X34 Wenn ich ein technisches Problem löse, so geschieht es meistens durch Glück.
-VAR21;X35 Die meisten technischen Probleme sind so kompliziert, dass es wenig Sinn hat, sich mit ihnen auseinander zu setzen.
-VAR22;Bitte geben Sie an, wie sehr Sie den folgenden Aussagen über sich persönlich zustimmen. Ich mache mir viele Sorgenüber meine Privatsphäre.
-VAR23;X37 Ich bin sehr empfindlich,wenn es darum geht, was mit meinen persönlichenDaten geschieht.
-VAR24;X38 Für mich ist es sehr wichtig, meine Privatsphäre zuschützen.
-VAR25;Bitte bewerten Sie folgende Aussagen: Ich halte mich mithilfe von sozialen Online-Netzwerken auf dem Laufenden.
-VAR26;X40 Ich bin in der Lage einen beliebigen Online-Inhalt (z.B. Bild, Datei) lokal abzuspeichern.
-VAR27;X41 Ich benutze Tastenkombinationen (z.B. Strg + C) um produktiver zu arbeiten.
-VAR28;X42 Um mir einen Beitrag (z.B. einen Artikel oder ein Video) zu einem späteren Zeitpunkt nochmal anschauen zu können, speichere ich diesen auf dem sozialen Online-Netzwerk ab.
-VAR29;X43 Mir ist bekannt, welches soziale Online-Netzwerk ich als App verwenden kann.
-VAR30;X44 Wenn mir Beiträge anderer Personen (z.B. Bilder, Kommentare, Links) auf sozialen Online-Netzwerken gefallen, teile ich diese.
-VAR31;X45 Ich kann erkennen, wann ich mit meinen Daten für bestimmte Web-Inhalte bezahle (z.B. Datenerfassung durch Cookies).
-VAR32;X46 Wenn ich einen Kettenbrief in WhatsApp erhalte, der vor einem Virus warnt, leite ich diesen an alle meine Kontakte weiter.
-VAR33;X47 Wenn ich im Internet surfe, habe ich immer meinen AdBlocker (Filterprogramm, die Werbung auf Internetseiten blockieren) aktiviert.
-VAR34;X48 Beim Installieren neuer Software, achte ich bewusst darauf keine Toolbars (Symbolleiste im Browser mit unterschiedlichen Bedienelementen) mit zu installieren.
-VAR35;X99 ... Ihre Daten technisch geschützt sind.
-VAR36;X100 ... Ihre Daten gesetzlich geschützt sind.
-VAR37;X101 ... Amazon nur von sich selbst erhobene Daten verwendet?
-VAR38;Bitte bewerten Sie die folgenden Aussagen zu möglichen Amazon Suchergebnissen. Die Suchergebnisse sprechen mich an.
-VAR39;X103 Ich kaufe häufig mir angezeigte Produkte.
-VAR40;X104 Ich glaube nicht, dass die angezeigten Produkte personalisiert sind.
-VAR41;X105 Die angezeigten Inhalte passen zu meinen Interessen.
-VAR42;X106 Mir wurden Produkte angezeigt, mit denen ich mich zuvor außerhalb von Amazon beschäftigt habe.
-VAR43;X107 Die personalisierten Angebote von Amazon erleichtern meinen Einkauf bei Amazon.
-VAR44;X108 Ich fühle mich in meiner Produktsuche bei Amazon nicht beeinflusst.
-VAR45;X109 Bei der Suche nach Produkten lasse ich mir die Vorschläge von Amazon anzeigen.
-VAR46;X110 Meine Suchergebnisse filtere ich aktiv (z.B. Preis aufsteigend, Amazon präsentiert, Kundenbewertung)
-VAR47;Wie sehr waren Sie sich bisher bewusst darüber, dass Amazon diese Daten von Ihnen sammelt? Suchanfragen auf Amazon
-VAR48;X112 Bisherige Käufe
-VAR49;X113 Suchanfragen auf anderen Seiten durch Cookies (z.B. Google)
-VAR50;X114 demographische Daten (Alter, Standort, Geschlecht)
-VAR51;X115 Zahlungsmethode
-VAR52;X116 Gefällt mir Angaben oder Abbonements auf anderen Seiten (Facebook, Google)
-VAR53;X117 Alexa Interaktionen
-VAR54;X118 Sonstiges (bitte angeben)_3
-VAR55;Wie häufig nutzen Sie Facebook? Response_3
-VAR56;Würden Sie sich als aktiven Facebooknutzer bezeichnen? Response_4
-VAR57;Welche Interaktionsfunktion Facebooks nutzen Sie am häufigsten? Response_5
-VAR58;Welche Beiträge sind für Sie besonders interessant? Response_6
-VAR59;Wofür nutzen Sie Facebook hauptsächlich? Response_7
-VAR60;Auf Facebook folge ich... Response_8
-VAR61;Auf Facebook folge ich..._1 Response_9
-VAR62;Auf Facebook reagiere ich auf politische Beiträge, die meiner Meinung entsprechen... Response_10
-VAR63;Auf Facebook reagiere ich auf politische Beiträge, die nicht meiner Meinung entsprechen... Response_11
-VAR64;Bitte bewerten Sie die folgenden Aussagen Ich lese bewusst Kommentare unter Beiträgen, die ich interessant finde.
-VAR65;X129 Ich folge Facebook-Seiten, die regelmäßig politische Inhalte veröffentlichen.
-VAR66;X130 Ich teile auf Facebook meine politische Meinung mit.
-VAR67;X131 Auf Facebook reagiere ich auf politische Beiträge (liken, kommentieren, teilen).
-VAR68;X132 Ich fühle mich durch Facebook politisch gut informiert.
-VAR69;X133 Ich bevorzuge es, Beiträge zu lesen, die meine politische Meinung vertreten oder unterstützen.
-VAR70;X134 Ein Facebookbeitrag hat mich schon einmal zu einer politischen Meinung bewegt.
-VAR71;X135 Ein Facebookbeitrag hat mich schon einmal dazu angeregt, meine politische Meinung zu hinterfragen.
-VAR72;X136 Ich nutze Facebook aktiv, um politische Themen detaillierter zu recherchieren.
-VAR73;Hier ist Platz für Ihre Fragen oder Anregungen: Open-Ended Response_1
+age;Bitte geben Sie Ihr Alter in Jahren (Zahl) an. Open-Ended Response
+gender;Bitte geben Sie Ihr Geschlecht an. Response
+on_fb;Ich nutze folgendes soziales Online-Netzwerk: Facebook
+on_ig;X17 Instagram
+on_tw;X18 Twitter
+on_sc;X19 Snapchat
+on_yt;X20 Youtube
+on_other;X21 Sonstiges (bitte angeben)_2
+tech_1;Bitte geben Sie an, inwieweit Sie den folgenden Aussagen zustimmen. Es macht mir Spaß, technische Systeme auszuprobieren.
+tech_2;X23 Technische Systeme machen mich unabhängig.
+tech_3;X24 Technische Systeme machen vieles umständlicher.
+tech_4;X25 Technische Systeme erleichtern mir den Alltag.
+tech_5;X26 Auch ohne Kaufabsicht informiere ich mich gerne über neue technische Systeme.
+tech_6;X27 Technische Systeme verringern den persönlichen Kontakt zu Anderen.
+kut_1;Bitte schätzen Sie Ihren Umgang mit technischen Problemen ein: Ich kann ziemlich viele der technischen Probleme, mit denen ich konfrontiert werde, alleine lösen.
+kut_2;X29 Technische Geräte sind oft undurchschaubar und schwer zu beherrschen.
+kut_3;X30 Es macht mir richtig Spaß, ein technisches Problem zu knacken.
+kut_4;X31 Weil ich mit bisherigen technischen Problemen gut zurecht gekommen bin, blicke ich auch künftigen technischen Problemen optimistisch entgegen.
+kut_5;X32 Ich fühle mich technischen Geräten gegenüber so hilflos, dass ich die Finger von ihnen lasse.
+kut_6;X33 Auch wenn Widerstände auftreten, bearbeite ich ein technisches Problem weiter.
+kut_7;X34 Wenn ich ein technisches Problem löse, so geschieht es meistens durch Glück.
+kut_8;X35 Die meisten technischen Probleme sind so kompliziert, dass es wenig Sinn hat, sich mit ihnen auseinander zu setzen.
+tvv_1;Bitte bewerten Sie folgende Aussagen: Ich halte mich mithilfe von sozialen Online-Netzwerken auf dem Laufenden.
+tva_1;X40 Ich bin in der Lage einen beliebigen Online-Inhalt (z.B. Bild, Datei) lokal abzuspeichern.
+tva_2;X41 Ich benutze Tastenkombinationen (z.B. Strg + C) um produktiver zu arbeiten.
+tva_3;X42 Um mir einen Beitrag (z.B. einen Artikel oder ein Video) zu einem späteren Zeitpunkt nochmal anschauen zu können, speichere ich diesen auf dem sozialen Online-Netzwerk ab.
+tvo_2;X43 Mir ist bekannt, welches soziale Online-Netzwerk ich als App verwenden kann.
+tvo_1;X44 Wenn mir Beiträge anderer Personen (z.B. Bilder, Kommentare, Links) auf sozialen Online-Netzwerken gefallen, teile ich diese.
+tvo_3;X45 Ich kann erkennen, wann ich mit meinen Daten für bestimmte Web-Inhalte bezahle (z.B. Datenerfassung durch Cookies).
+tva_4;X47 Wenn ich im Internet surfe, habe ich immer meinen AdBlocker (Filterprogramm, die Werbung auf Internetseiten blockieren) aktiviert.
+tva_5;X48 Beim Installieren neuer Software, achte ich bewusst darauf keine Toolbars (Symbolleiste im Browser mit unterschiedlichen Bedienelementen) mit zu installieren.
+IMIBpl_1;Bitte bewerten Sie folgende Aussagen:_1 Ich benutze soziale Online-Netzwerke, um mich zu informieren. (z.B. über Nachrichten, lokale Angebote, Veranstaltungen, etc.)
+IMIBpl_2;X55 Mit meinen Suchbegriffen finde ich bei einer Suchmaschinen-Anfrage immer genau das, was ich suche/ wissen möchte.
+IMIBpl_3;X56 Ich benutze Hashtags (#) um Suchen in sozialen Online-Netzwerken durchzuführen.
+IMOSImin_1;X57 Meistens muss ich viele verschiedene Stichworte in einer Suche eingeben, bevor ich gesuchte Inhalte finde.
+IMOSImin_2;X58 Manchmal lande ich auf Webseiten, ohne zu wissen, wie ich dort hingekommen bin.
+IMOSIpl_1;X59 Die Navigation innerhalb eines sozialen Online-Netzwerkes fällt mir leicht (ich erreiche die Übersichtsseite zu Einstellungen und der Einsicht meiner persönlichen Angaben ohne große Mühe).
+IMIBwertpl_1;X60 Ich bin mit den Problemen online-basierter Informationsbeschaffung vertraut. (Ich bin in diesem Zusammenhang mit mindestens zwei der folgenden Begriffe vertraut: Internetsicherheit, Filterblase, Algorithmus, Urheberrechte).
+IMIBwert_1;X61 Falls ich mir über den Wahrheitsgehalt eines Ergebnisses nicht sicher bin, da es nicht vertrauenserweckend scheint, setze ich meine Suche einfach auf einer anderen Seite fort.
+MIBwert_3;X62 Wenn ich unerwünschte Nachrichten in meinem E-Mail Postfach habe, identifiziere ich diese als Spam-E-Mails._1
+socialbots_1;X63 Der Einsatz von Social Bots (Programme, die in sozialen Netzwerken menschliche Verhaltensmuster simulieren) ist mir bekannt.
+socialbots_2;X64 Nachrichten von Social Bots erkenne ich nach wenigen Sekunden._1
+blog_1;X65 Ich habe einen eigenen Blog (öffentliche Webseite, die mit persönlichen Kommentaren zu einem bestimmten Thema ergänzt wird)._1
+blog_2;X66 Ich verfolge regelmäßig (mind. 1x pro Woche) Blogs, die mich interessieren._1
+MIBwert_4;X67 Wenn ich einen Kettenbrief in WhatsApp erhalte, der vor einem Virus warnt, leite ich diesen an alle meine Kontakte weiter._1
+son_use_1;Bitte bewerten Sie folgende Aussagen:_2 Im Umgang mit sozialen Online-Netzwerken fühle ich mich sicher.
+son_use_2;X69 Im Umgang mit sozialen Online-Netzwerken fühle ich mich unsicher.
+son_use_3;X70 Der Umgang mit sozialen Online-Netzwerken bereitet mir Unbehagen.
+son_use_4;X71 Es fällt mir leicht, Inhalte in sozialen Online-Netzwerken zu erstellen.
+son_use_5;X72 Inhalte auf sozialen Online-Netzwerken zu erstellen (z.B. einen Beitrag erstellen oder ein Bild hochladen etc.), stellt für mich ein Problem dar.
+son_use_6;X73 Ich finde auf sozialen Online-Netzwerken immer die Beiträge und Informationen, die mich interessieren.
+son_use_7;X74 Die Inhalte von Beiträgen und Informationen, die ich in sozialen Online-Netzwerken erhalte, überfordern mich.
+son_use_8;X75 Falls ich auf unangebrachte Inhalte in sozialen Online-Netzwerken stoße, gehe ich damit entsprechend um (z.B. Beitrag melden, Nutzer blockieren).
+son_use_9;X76 Wenn ich unangebrachte Inhalte in sozialen Online-Netzwerken entdecke, bin ich überfordert.
+comment;Hier ist Platz für Ihre Fragen oder Anregungen: Open-Ended Response_1
