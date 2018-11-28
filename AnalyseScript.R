@@ -19,7 +19,8 @@ raw.short <- raw[,c(-1:-9, -12:-15, -36:-38, -46, -49:-53, -77:-136)]
 
 ### Schritt 2: Variablen umbenennen 
 # Codebook mit den Variablennamen erzeugen:
-## generate_codebook(raw.short, "codebook.csv") auskommwntieren, damit keine Überschreibung passiert
+#generate_codebook(raw.short, "codebook.csv") auskommentieren damit keine Ueberschreibung passiert
+
 
 # Dann codebook.csv in Excel öffnen, die Vairablennamen per Hand umbenennen, 
 codebook <- read_codebook("codebook_final.csv")
