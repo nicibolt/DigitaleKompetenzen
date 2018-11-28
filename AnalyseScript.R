@@ -121,7 +121,46 @@ raw.short$son_use_9 <- ordered(raw.short$son_use_9, levels = scale.zustimmung)
 #### Schritt 4: Skalen berechnen ----
 
 # Skalenberechnung ----
-print("Hier werden später Skalen berechnet. Thema am 09.11.2018")
+
+library(psych)
+
+schluesselliste <- list(ON_SON= c("on_fb", "on_ig", "on_tw", "on_sc", "on_yt", "on_other"),
+                        TECH = c("tech_1", "tech_2", "-tech_3", 
+                                     "tech_4", "tech_5", "-tech_6"),
+                        KUT = c("kut_1", "-kut_2", "kut_3", "kut_4", "-kut_5", "kut_6", "-kut_7", "-kut_8"),
+                        TVV = c("tvv_1"),
+                        TVA = c("tva_1", "tva_2", "tva_3", "tva_4", "tva_5"),
+                        TVO = c("tvo_1", "tvo_2", "tvo_3"),
+                        IMIBPL = c("IMIBpl_1", "IMIBpl_2", "IMIBpl_3"),
+                        IMOSIMIN = c("-IMOSImin_1", "-IMOSImin_2"),
+                        IMOSIPL = c("IMOSIpl_1"),
+                        IMIBWERTPL = c("IMIBwertpl_1"),
+                        IMIBWERT = c("IMIBwert_1"),
+                        MIBWERT = c("-MIBwert_3","MIBwert_4"),
+                        SOCIALBOT = c("socialbots_1","socialbots_2"),
+                        BLOG = c("blog_1","blog_2"),
+                        SON_USE = c("son_use_1", "-son_use_2", "-son_use_3", "son_use_4", "-son_use_5", "son_use_6", "-son_use_7", "son_use_8", "-son_use_9"))
+
+scores <- scoreItems(schluesselliste, raw.short, missing = TRUE, min = 1, max = 6)
+
+data <- bind_cols(raw.short, as.tibble(scores$scores))
+data <- data %>% 
+  select(-starts_with("on_", ignore.case = F)) %>% 
+  select(-starts_with("tech_", ignore.case = F)) %>%
+  select(-starts_with("kut_", ignore.case = F)) %>%
+  select(-starts_with("tvv_", ignore.case = F)) %>%
+  select(-starts_with("tva_", ignore.case = F)) %>%
+  select(-starts_with("tvo_", ignore.case = F)) %>%
+  select(-starts_with("IMIBpl_", ignore.case = F)) %>%
+  select(-starts_with("IMOSImin_", ignore.case = F)) %>% 
+  select(-starts_with("IMOSIpl_", ignore.case = F)) %>% 
+  select(-starts_with("IMIBwertpl_", ignore.case = F)) %>%
+  select(-starts_with("IMIBwert_", ignore.case = F)) %>%
+  select(-starts_with("MIBwert_", ignore.case = F)) %>%
+  select(-starts_with("socialbots_", ignore.case = F)) %>%
+  select(-starts_with("blog_", ignore.case = F)) %>% 
+  select(-starts_with("son_use_", ignore.case = F)) 
+
 # Analyse ----
 print("Hier werden später statistische Analysen durchgeführt. Thema ab dem 16.11.2018")
 # Graphik erstellung ---- 
