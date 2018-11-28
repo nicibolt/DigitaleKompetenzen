@@ -17,7 +17,7 @@ source("surveymonkey.R")
 
 
 
-# Data Cleaning ----
+# Datei laden ----
 
 filename <- "data/DigitaleMuendigkeit.csv"
 raw <- load_surveymonkey_csv(filename)
@@ -128,7 +128,7 @@ raw.short$son_use_7 <- ordered(raw.short$son_use_7, levels = scale.zustimmung)
 raw.short$son_use_8 <- ordered(raw.short$son_use_8, levels = scale.zustimmung)
 raw.short$son_use_9 <- ordered(raw.short$son_use_9, levels = scale.zustimmung)
 
-
+#### Schritt 4: Skalen berechnen ----
 
 # Skalenberechnung ----
 print("Hier werden später Skalen berechnet. Thema am 09.11.2018")
