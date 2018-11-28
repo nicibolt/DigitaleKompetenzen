@@ -1,0 +1,74 @@
+variable;text
+VAR1;Bitte geben Sie Ihr Alter in Jahren (Zahl) an. Open-Ended Response
+VAR2;Ich nutze folgendes soziales Online-Netzwerk: Facebook
+VAR3;X17 Instagram
+VAR4;X18 Twitter
+VAR5;X19 Snapchat
+VAR6;X20 Youtube
+VAR7;X21 Sonstiges (bitte angeben)_2
+VAR8;Bitte geben Sie an, inwieweit Sie den folgenden Aussagen zustimmen. Es macht mir Spaß, technische Systeme auszuprobieren.
+VAR9;X23 Technische Systeme machen mich unabhängig.
+VAR10;X24 Technische Systeme machen vieles umständlicher.
+VAR11;X25 Technische Systeme erleichtern mir den Alltag.
+VAR12;X26 Auch ohne Kaufabsicht informiere ich mich gerne über neue technische Systeme.
+VAR13;X27 Technische Systeme verringern den persönlichen Kontakt zu Anderen.
+VAR14;Bitte schätzen Sie Ihren Umgang mit technischen Problemen ein: Ich kann ziemlich viele der technischen Probleme, mit denen ich konfrontiert werde, alleine lösen.
+VAR15;X29 Technische Geräte sind oft undurchschaubar und schwer zu beherrschen.
+VAR16;X30 Es macht mir richtig Spaß, ein technisches Problem zu knacken.
+VAR17;X31 Weil ich mit bisherigen technischen Problemen gut zurecht gekommen bin, blicke ich auch künftigen technischen Problemen optimistisch entgegen.
+VAR18;X32 Ich fühle mich technischen Geräten gegenüber so hilflos, dass ich die Finger von ihnen lasse.
+VAR19;X33 Auch wenn Widerstände auftreten, bearbeite ich ein technisches Problem weiter.
+VAR20;X34 Wenn ich ein technisches Problem löse, so geschieht es meistens durch Glück.
+VAR21;X35 Die meisten technischen Probleme sind so kompliziert, dass es wenig Sinn hat, sich mit ihnen auseinander zu setzen.
+VAR22;Bitte geben Sie an, wie sehr Sie den folgenden Aussagen über sich persönlich zustimmen. Ich mache mir viele Sorgenüber meine Privatsphäre.
+VAR23;X37 Ich bin sehr empfindlich,wenn es darum geht, was mit meinen persönlichenDaten geschieht.
+VAR24;X38 Für mich ist es sehr wichtig, meine Privatsphäre zuschützen.
+VAR25;Bitte bewerten Sie folgende Aussagen: Ich halte mich mithilfe von sozialen Online-Netzwerken auf dem Laufenden.
+VAR26;X40 Ich bin in der Lage einen beliebigen Online-Inhalt (z.B. Bild, Datei) lokal abzuspeichern.
+VAR27;X41 Ich benutze Tastenkombinationen (z.B. Strg + C) um produktiver zu arbeiten.
+VAR28;X42 Um mir einen Beitrag (z.B. einen Artikel oder ein Video) zu einem späteren Zeitpunkt nochmal anschauen zu können, speichere ich diesen auf dem sozialen Online-Netzwerk ab.
+VAR29;X43 Mir ist bekannt, welches soziale Online-Netzwerk ich als App verwenden kann.
+VAR30;X44 Wenn mir Beiträge anderer Personen (z.B. Bilder, Kommentare, Links) auf sozialen Online-Netzwerken gefallen, teile ich diese.
+VAR31;X45 Ich kann erkennen, wann ich mit meinen Daten für bestimmte Web-Inhalte bezahle (z.B. Datenerfassung durch Cookies).
+VAR32;X46 Wenn ich einen Kettenbrief in WhatsApp erhalte, der vor einem Virus warnt, leite ich diesen an alle meine Kontakte weiter.
+VAR33;X47 Wenn ich im Internet surfe, habe ich immer meinen AdBlocker (Filterprogramm, die Werbung auf Internetseiten blockieren) aktiviert.
+VAR34;X48 Beim Installieren neuer Software, achte ich bewusst darauf keine Toolbars (Symbolleiste im Browser mit unterschiedlichen Bedienelementen) mit zu installieren.
+VAR35;X99 ... Ihre Daten technisch geschützt sind.
+VAR36;X100 ... Ihre Daten gesetzlich geschützt sind.
+VAR37;X101 ... Amazon nur von sich selbst erhobene Daten verwendet?
+VAR38;Bitte bewerten Sie die folgenden Aussagen zu möglichen Amazon Suchergebnissen. Die Suchergebnisse sprechen mich an.
+VAR39;X103 Ich kaufe häufig mir angezeigte Produkte.
+VAR40;X104 Ich glaube nicht, dass die angezeigten Produkte personalisiert sind.
+VAR41;X105 Die angezeigten Inhalte passen zu meinen Interessen.
+VAR42;X106 Mir wurden Produkte angezeigt, mit denen ich mich zuvor außerhalb von Amazon beschäftigt habe.
+VAR43;X107 Die personalisierten Angebote von Amazon erleichtern meinen Einkauf bei Amazon.
+VAR44;X108 Ich fühle mich in meiner Produktsuche bei Amazon nicht beeinflusst.
+VAR45;X109 Bei der Suche nach Produkten lasse ich mir die Vorschläge von Amazon anzeigen.
+VAR46;X110 Meine Suchergebnisse filtere ich aktiv (z.B. Preis aufsteigend, Amazon präsentiert, Kundenbewertung)
+VAR47;Wie sehr waren Sie sich bisher bewusst darüber, dass Amazon diese Daten von Ihnen sammelt? Suchanfragen auf Amazon
+VAR48;X112 Bisherige Käufe
+VAR49;X113 Suchanfragen auf anderen Seiten durch Cookies (z.B. Google)
+VAR50;X114 demographische Daten (Alter, Standort, Geschlecht)
+VAR51;X115 Zahlungsmethode
+VAR52;X116 Gefällt mir Angaben oder Abbonements auf anderen Seiten (Facebook, Google)
+VAR53;X117 Alexa Interaktionen
+VAR54;X118 Sonstiges (bitte angeben)_3
+VAR55;Wie häufig nutzen Sie Facebook? Response_3
+VAR56;Würden Sie sich als aktiven Facebooknutzer bezeichnen? Response_4
+VAR57;Welche Interaktionsfunktion Facebooks nutzen Sie am häufigsten? Response_5
+VAR58;Welche Beiträge sind für Sie besonders interessant? Response_6
+VAR59;Wofür nutzen Sie Facebook hauptsächlich? Response_7
+VAR60;Auf Facebook folge ich... Response_8
+VAR61;Auf Facebook folge ich..._1 Response_9
+VAR62;Auf Facebook reagiere ich auf politische Beiträge, die meiner Meinung entsprechen... Response_10
+VAR63;Auf Facebook reagiere ich auf politische Beiträge, die nicht meiner Meinung entsprechen... Response_11
+VAR64;Bitte bewerten Sie die folgenden Aussagen Ich lese bewusst Kommentare unter Beiträgen, die ich interessant finde.
+VAR65;X129 Ich folge Facebook-Seiten, die regelmäßig politische Inhalte veröffentlichen.
+VAR66;X130 Ich teile auf Facebook meine politische Meinung mit.
+VAR67;X131 Auf Facebook reagiere ich auf politische Beiträge (liken, kommentieren, teilen).
+VAR68;X132 Ich fühle mich durch Facebook politisch gut informiert.
+VAR69;X133 Ich bevorzuge es, Beiträge zu lesen, die meine politische Meinung vertreten oder unterstützen.
+VAR70;X134 Ein Facebookbeitrag hat mich schon einmal zu einer politischen Meinung bewegt.
+VAR71;X135 Ein Facebookbeitrag hat mich schon einmal dazu angeregt, meine politische Meinung zu hinterfragen.
+VAR72;X136 Ich nutze Facebook aktiv, um politische Themen detaillierter zu recherchieren.
+VAR73;Hier ist Platz für Ihre Fragen oder Anregungen: Open-Ended Response_1
