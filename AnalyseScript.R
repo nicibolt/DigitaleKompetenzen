@@ -161,6 +161,7 @@ data <- data %>%
   select(-starts_with("blog_", ignore.case = F)) %>% 
   select(-starts_with("son_use_", ignore.case = F)) 
 
+
 # Analyse ----
 print("Hier werden später statistische Analysen durchgeführt. Thema ab dem 16.11.2018")
 # Graphik erstellung ---- 
