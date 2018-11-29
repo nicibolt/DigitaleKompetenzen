@@ -122,6 +122,8 @@ raw.short$son_use_5 <- ordered(raw.short$son_use_5, levels = scale.zustimmung2)
 raw.short$son_use_6 <- ordered(raw.short$son_use_6, levels = scale.zustimmung2)
 raw.short$son_use_7 <- ordered(raw.short$son_use_7, levels = scale.zustimmung2)
 
+
+
 #### Schritt 4: Skalen berechnen ----
 
 # Skalenberechnung ----
