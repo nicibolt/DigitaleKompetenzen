@@ -19,7 +19,7 @@ raw.short <- raw[,c(-1:-9, -12:-15, -36:-38, -46, -49:-53, -68:-69, -77:-136)]
 
 ### Schritt 2: Variablen umbenennen 
 # Codebook mit den Variablennamen erzeugen:
-#generate_codebook(raw.short, "codebook.csv") auskommentieren damit keine Ueberschreibung passiert
+#generate_codebook(raw.short, "codebook.csv")
 
 
 # Dann codebook.csv in Excel öffnen, die Vairablennamen per Hand umbenennen, 
@@ -27,7 +27,6 @@ codebook <- read_codebook("codebook_final.csv")
 
 #neue Namen auf die Daten anwenden:
 names(raw.short) <- codebook$variable
-
 
 
 
@@ -122,8 +121,6 @@ raw.short$son_use_4 <- ordered(raw.short$son_use_4, levels = scale.zustimmung2)
 raw.short$son_use_5 <- ordered(raw.short$son_use_5, levels = scale.zustimmung2)
 raw.short$son_use_6 <- ordered(raw.short$son_use_6, levels = scale.zustimmung2)
 raw.short$son_use_7 <- ordered(raw.short$son_use_7, levels = scale.zustimmung2)
-raw.short$son_use_8 <- ordered(raw.short$son_use_8, levels = scale.zustimmung2)
-raw.short$son_use_9 <- ordered(raw.short$son_use_9, levels = scale.zustimmung2)
 
 #### Schritt 4: Skalen berechnen ----
 
@@ -146,7 +143,7 @@ schluesselliste <- list(ON_SON= c("on_fb", "on_ig", "on_tw", "on_sc", "on_yt", "
                         MIBWERT = c("-MIBwert_3","MIBwert_4"),
                         SOCIALBOT = c("socialbots_1","socialbots_2"),
                         BLOG = c("blog_1","blog_2"),
-                        SON_USE = c("son_use_1", "-son_use_2", "-son_use_3", "son_use_4", "-son_use_5", "son_use_6", "-son_use_7", "son_use_8", "-son_use_9"))
+                        SON_USE = c("son_use_1", "-son_use_2", "-son_use_3", "son_use_4", "-son_use_5", "son_use_6", "-son_use_7"))
 
 scores <- scoreItems(schluesselliste, raw.short, missing = TRUE, min = 1, max = 6)
 
@@ -174,4 +171,5 @@ warnings()
 print("Hier werden später statistische Analysen durchgeführt. Thema ab dem 16.11.2018")
 # Graphik erstellung ---- 
 print("Hier werden später Grafiken erstellt. Thema ab dem 16.11.2018")
+
 
