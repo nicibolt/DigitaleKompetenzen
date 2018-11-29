@@ -44,6 +44,13 @@ scale.zustimmung <-c("stimme gar nicht zu",
                      "stimme zu", 
                      "stimme voll zu")
 
+scale.zustimmung2 <-c("stimme gar nicht zu", 
+                     "stimme nicht zu", 
+                     "stimme eher nicht zu", 
+                     "stimme eher zu", 
+                     "stimme zu", 
+                     "stimme völlig zu")
+
 # Skala für Häufigkeit anlegen:
 scale.rythm <-c("mehrmals täglich", 
                 "täglich", 
@@ -82,41 +89,41 @@ raw.short$kut_7 <- ordered(raw.short$kut_7, levels = scale.zustimmung)
 raw.short$kut_8 <- ordered(raw.short$kut_8, levels = scale.zustimmung)
 
 # Technikverständnis, -ausführung und -orientierung
-raw.short$tvv_1 <- ordered(raw.short$tvv_1, levels = scale.zustimmung)
-raw.short$tva_1 <- ordered(raw.short$tva_1, levels = scale.zustimmung)
-raw.short$tva_2 <- ordered(raw.short$tva_2, levels = scale.zustimmung)
-raw.short$tva_3 <- ordered(raw.short$tva_3, levels = scale.zustimmung)
-raw.short$tvo_2 <- ordered(raw.short$tvo_2, levels = scale.zustimmung)
-raw.short$tvo_1 <- ordered(raw.short$tvo_2, levels = scale.zustimmung)
-raw.short$tvo_3 <- ordered(raw.short$tvo_3, levels = scale.zustimmung)
-raw.short$tva_4 <- ordered(raw.short$tva_4, levels = scale.zustimmung)
-raw.short$tva_5 <- ordered(raw.short$tva_5, levels = scale.zustimmung)
+raw.short$tvv_1 <- ordered(raw.short$tvv_1, levels = scale.zustimmung2)
+raw.short$tva_1 <- ordered(raw.short$tva_1, levels = scale.zustimmung2)
+raw.short$tva_2 <- ordered(raw.short$tva_2, levels = scale.zustimmung2)
+raw.short$tva_3 <- ordered(raw.short$tva_3, levels = scale.zustimmung2)
+raw.short$tvo_2 <- ordered(raw.short$tvo_2, levels = scale.zustimmung2)
+raw.short$tvo_1 <- ordered(raw.short$tvo_2, levels = scale.zustimmung2)
+raw.short$tvo_3 <- ordered(raw.short$tvo_3, levels = scale.zustimmung2)
+raw.short$tva_4 <- ordered(raw.short$tva_4, levels = scale.zustimmung2)
+raw.short$tva_5 <- ordered(raw.short$tva_5, levels = scale.zustimmung2)
 
 # Informationsmanagement
-raw.short$IMIBpl_1 <- ordered(raw.short$IMIBpl_1, levels = scale.zustimmung)
-raw.short$IMIBpl_2 <- ordered(raw.short$IMIBpl_2, levels = scale.zustimmung)
-raw.short$IMIBpl_3 <- ordered(raw.short$IMIBpl_3, levels = scale.zustimmung)
-raw.short$IMOSImin_1 <- ordered(raw.short$IMOSIpl_1, levels = scale.zustimmung)
-raw.short$IMOSImin_2 <- ordered(raw.short$IMOSImin_2, levels = scale.zustimmung)
-raw.short$IMOSIpl_1 <- ordered(raw.short$IMOSImin_2, levels = scale.zustimmung)
-raw.short$IMIBwertpl_1 <- ordered(raw.short$IMIBwertpl_1, levels = scale.zustimmung)
-raw.short$IMIBwert_1 <- ordered(raw.short$IMIBwert_1, levels = scale.zustimmung)
-raw.short$MIBwert_3 <- ordered(raw.short$MIBwert_3, levels = scale.zustimmung)
-raw.short$socialbots_1 <- ordered(raw.short$socialbots_1, levels = scale.zustimmung)
-raw.short$socialbots_2 <- ordered(raw.short$socialbots_2, levels = scale.zustimmung)
-raw.short$blog_1 <- ordered(raw.short$blog_1, levels = scale.zustimmung)
-raw.short$blog_2 <- ordered(raw.short$blog_2, levels = scale.zustimmung)
-raw.short$MIBwert_4 <- ordered(raw.short$MIBwert_4, levels = scale.zustimmung)
+raw.short$IMIBpl_1 <- ordered(raw.short$IMIBpl_1, levels = scale.zustimmung2)
+raw.short$IMIBpl_2 <- ordered(raw.short$IMIBpl_2, levels = scale.zustimmung2)
+raw.short$IMIBpl_3 <- ordered(raw.short$IMIBpl_3, levels = scale.zustimmung2)
+raw.short$IMOSImin_1 <- ordered(raw.short$IMOSIpl_1, levels = scale.zustimmung2)
+raw.short$IMOSImin_2 <- ordered(raw.short$IMOSImin_2, levels = scale.zustimmung2)
+raw.short$IMOSIpl_1 <- ordered(raw.short$IMOSImin_2, levels = scale.zustimmung2)
+raw.short$IMIBwertpl_1 <- ordered(raw.short$IMIBwertpl_1, levels = scale.zustimmung2)
+raw.short$IMIBwert_1 <- ordered(raw.short$IMIBwert_1, levels = scale.zustimmung2)
+raw.short$MIBwert_3 <- ordered(raw.short$MIBwert_3, levels = scale.zustimmung2)
+raw.short$socialbots_1 <- ordered(raw.short$socialbots_1, levels = scale.zustimmung2)
+raw.short$socialbots_2 <- ordered(raw.short$socialbots_2, levels = scale.zustimmung2)
+raw.short$blog_1 <- ordered(raw.short$blog_1, levels = scale.zustimmung2)
+raw.short$blog_2 <- ordered(raw.short$blog_2, levels = scale.zustimmung2)
+raw.short$MIBwert_4 <- ordered(raw.short$MIBwert_4, levels = scale.zustimmung2)
 
-raw.short$son_use_1 <- ordered(raw.short$son_use_1, levels = scale.zustimmung)
-raw.short$son_use_2 <- ordered(raw.short$son_use_2, levels = scale.zustimmung)
-raw.short$son_use_3 <- ordered(raw.short$son_use_3, levels = scale.zustimmung)
-raw.short$son_use_4 <- ordered(raw.short$son_use_4, levels = scale.zustimmung)
-raw.short$son_use_5 <- ordered(raw.short$son_use_5, levels = scale.zustimmung)
-raw.short$son_use_6 <- ordered(raw.short$son_use_6, levels = scale.zustimmung)
-raw.short$son_use_7 <- ordered(raw.short$son_use_7, levels = scale.zustimmung)
-raw.short$son_use_8 <- ordered(raw.short$son_use_8, levels = scale.zustimmung)
-raw.short$son_use_9 <- ordered(raw.short$son_use_9, levels = scale.zustimmung)
+raw.short$son_use_1 <- ordered(raw.short$son_use_1, levels = scale.zustimmung2)
+raw.short$son_use_2 <- ordered(raw.short$son_use_2, levels = scale.zustimmung2)
+raw.short$son_use_3 <- ordered(raw.short$son_use_3, levels = scale.zustimmung2)
+raw.short$son_use_4 <- ordered(raw.short$son_use_4, levels = scale.zustimmung2)
+raw.short$son_use_5 <- ordered(raw.short$son_use_5, levels = scale.zustimmung2)
+raw.short$son_use_6 <- ordered(raw.short$son_use_6, levels = scale.zustimmung2)
+raw.short$son_use_7 <- ordered(raw.short$son_use_7, levels = scale.zustimmung2)
+raw.short$son_use_8 <- ordered(raw.short$son_use_8, levels = scale.zustimmung2)
+raw.short$son_use_9 <- ordered(raw.short$son_use_9, levels = scale.zustimmung2)
 
 #### Schritt 4: Skalen berechnen ----
 
@@ -161,6 +168,7 @@ data <- data %>%
   select(-starts_with("blog_", ignore.case = F)) %>% 
   select(-starts_with("son_use_", ignore.case = F)) 
 
+warnings()
 
 # Analyse ----
 print("Hier werden später statistische Analysen durchgeführt. Thema ab dem 16.11.2018")
