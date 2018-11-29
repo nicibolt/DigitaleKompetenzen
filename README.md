@@ -47,3 +47,7 @@ Diese Version wurde am 02.11.2018 aus folgenden Gründen angepasst:
 
 
 ![tooltip](images/DigitaleKompetenzen_FR_241018.png)
+
+*_Stand 29.11.2018_*
+* Der Fragebogen wurde in der vergangenen Woche mit Surveymonkey für den Testdurchlauf fertiggestellt.
+* Mithilfe von sechs selbstproduzierten Dummy-Datensätzen (Alter 99) wurde ein Datacleaning durchgeführt.
