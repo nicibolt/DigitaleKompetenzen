@@ -18,8 +18,6 @@ __**Unterschiedshypothesen (Stand 29.11.18)**__
 1. Unterschiedshypothese:
 Es besteht ein Unterschied zwischen den digitalen Kompetenzen „Technikverständnis” und „Informationsmanagement” im Umgang mit sozialen Online-Netzwerken abhängig vom Alter.
 
-
-
 2. Unterschiedhypothese
 Es besteht ein Unterschied zwischen den digitalen Kompetenzen „Technikverständnis” und „Informationsmanagement” im Umgang mit sozialen Online-Netzwerken abhängig von der KUT.
 
