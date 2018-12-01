@@ -2,7 +2,6 @@
 In diesem Forschungsprojekt sollen Digitale Kompetenzen im Rahmen der Digitalen Mündigkeit untersucht werden.
 
 #### Teammitglieder
-
 frepai
 kathiwa
 meleina
@@ -13,16 +12,20 @@ tsheesy
 #### Forschungsfrage
 Welchen Einfluss haben das Alter eines Nutzers einerseits und die KUT des Nutzers andererseits auf dessen digitalen Kompetenzen "Technikverständnis" und "Informationsmanagement" im Umgang mit sozialen Online-Netzwerken?
 
-__**Unterschiedshypothesen (Stand 29.11.18)**__
+#### Unterschieds- und Nullhypothesen
+##### 1. Unterschiedshypothese:
+H0: Es besteht kein Unterschied zwischen den digitalen Kompetenzen „Technikverständnis” und „Informationsmanagement” im Umgang mit sozialen Online-Netzwerken abhängig vom Alter.
+H1: Es besteht ein Unterschied zwischen den digitalen Kompetenzen „Technikverständnis” und „Informationsmanagement” im Umgang mit sozialen Online-Netzwerken abhängig vom Alter.
 
-1. Unterschiedshypothese:
-Es besteht ein Unterschied zwischen den digitalen Kompetenzen „Technikverständnis” und „Informationsmanagement” im Umgang mit sozialen Online-Netzwerken abhängig vom Alter.
+##### 2. Unterschiedshypothese:
+H0: Es besteht kein Unterschied zwischen den digitalen Kompetenzen „Technikverständnis” und „Informationsmanagement” im Umgang mit sozialen Online-Netzwerken abhängig von der KUT.
+H1: Es besteht ein Unterschied zwischen den digitalen Kompetenzen „Technikverständnis” und „Informationsmanagement” im Umgang mit sozialen Online-Netzwerken abhängig von der KUT.
 
-2. Unterschiedhypothese
-Es besteht ein Unterschied zwischen den digitalen Kompetenzen „Technikverständnis” und „Informationsmanagement” im Umgang mit sozialen Online-Netzwerken abhängig von der KUT.
+##### 3. Unterschiedshypothese:
+H0: Es besteht kein Unterschied zwischen der KUT abhängig vom Alter.
+H1: Es besteht ein Unterschied zwischen der KUT abhängig vom Alter.
 
-3. Unterschiedshypothese:
-Es besteht ein Unterschied zwischen der KUT abhängig vom Alter.
+__
 
 
 
