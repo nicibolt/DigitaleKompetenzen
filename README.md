@@ -25,6 +25,7 @@ H1: Es besteht ein Unterschied zwischen den digitalen Kompetenzen „Technikvers
 H0: Es besteht kein Unterschied zwischen der KUT abhängig vom Alter.
 H1: Es besteht ein Unterschied zwischen der KUT abhängig vom Alter.
 
+
 __
 
 
