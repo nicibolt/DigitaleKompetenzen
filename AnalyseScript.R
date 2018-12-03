@@ -169,7 +169,8 @@ data <- data %>%
 
 warnings()
 
-##### FEEDBACK Datacleaning: Alles super! Wenn inhaltlich alles korrekt ist (z.B. die richtigen Items negativ codiert sind) werden Sie im Januar wenig Arbeit haben :-) ----
+##### FEEDBACK Datacleaning: Alles super! Den Bildungsstand sollten Sie aber nicht löschen (direkt am Anfang), der ist wichtig für die Stichprobenbeschreibung. ----
+##### Wenn inhaltlich alles korrekt ist (z.B. die richtigen Items negativ codiert sind) werden Sie im Januar wenig Arbeit haben :-) 
 
 # Analyse ----
 print("Hier werden später statistische Analysen durchgeführt. Thema ab dem 16.11.2018")
