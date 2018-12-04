@@ -15,10 +15,10 @@ raw <- load_surveymonkey_csv(filename)
 #### Daten cleanen ----
 
 ### Schritt 1: Unnötige Spalten löschen.
-raw.short <- raw[,c(-1:-9, -12:-15, -36:-38, -46, -49:-53, -68:-69, -77:-136)] 
+raw.short <- raw[,c(-1:-9, -13:-15, -36:-38, -46, -49:-53, -68:-69, -77:-136)] 
 
 ### Schritt 2: Variablen umbenennen 
-# Codebook mit den Variablennamen erzeugen:
+# Codebook mit den Variablennamen zeugen:
 #generate_codebook(raw.short, "codebook.csv")
 
 
