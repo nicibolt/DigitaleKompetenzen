@@ -15,10 +15,10 @@ raw <- load_surveymonkey_csv(filename)
 #### Daten cleanen ----
 
 ### Schritt 1: Unnötige Spalten löschen.
-raw.short <- raw[,c(-1:-9, -12:-15, -36:-38, -46, -49:-53, -68:-69, -77:-136)] 
+raw.short <- raw[,c(-1:-9, -13:-15, -36:-38, -46, -49:-53, -68:-69, -77:-136)] 
 
 ### Schritt 2: Variablen umbenennen 
-# Codebook mit den Variablennamen erzeugen:
+# Codebook mit den Variablennamen zeugen:
 #generate_codebook(raw.short, "codebook.csv")
 
 
@@ -177,5 +177,25 @@ print("Hier werden später statistische Analysen durchgeführt. Thema ab dem 16.
 # Graphik erstellung ---- 
 print("Hier werden später Grafiken erstellt. Thema ab dem 16.11.2018")
 
+##R Codes zur Überprüfung unserer 3 Hypothesen (vgl. README.md)
+
+  ##Technikverstaendnis - Alter (H1,H0)
+##Informationsmanagement - Alter (H1,H0)
+  t.test(age,TECH)
+t.test(age, IMIBPL)
+t.test(age, IMOSIMIN)
+t.test(age, IMIBWERTPL)
+t.test(age, IMIBWERT)
+
+  ##Technikverständnis - KUT (H1,H0)
+##Informationsmanagement - KUT (H1,H0)
+  t.test(KUT, TVV)
+t.test(KUT, IMIBPL)
+t.test(KUT, IMOSIMIN)
+t.test(KUT, IMIBWERTPL)
+t.test(KUT, IMIBWERT)
+  
+## KUT - Alter (H1,H0)
+t.test(KUT, age)
 saveRDS(data,"data/DigitaleMuendigkeit2.rds")
 

@@ -55,3 +55,6 @@ Diese Version wurde am 02.11.2018 aus folgenden Gründen angepasst:
 *_Stand 29.11.2018_*
 * Der Fragebogen wurde in der vergangenen Woche mit Surveymonkey für den Testdurchlauf fertiggestellt.
 * Mithilfe von sechs selbstproduzierten Dummy-Datensätzen (Alter 99) wurde ein Datacleaning durchgeführt.
+
+*_Stand 06.12.2018_*
+* Für die weitere Erhebung wurdem Nullhypothesen und Unterschiedshypothesen hinzugefügt. Durch Two-Sample-Tests können die zu       erwartenden Beobachtungen zur Interpretation beitragen.

@@ -1,54 +1,55 @@
 variable;text
 VAR1;Bitte geben Sie Ihr Alter in Jahren (Zahl) an. Open-Ended Response
 VAR2;Bitte geben Sie Ihr Geschlecht an. Response
-VAR3;Ich nutze folgendes soziales Online-Netzwerk: Facebook
-VAR4;X17 Instagram
-VAR5;X18 Twitter
-VAR6;X19 Snapchat
-VAR7;X20 Youtube
-VAR8;X21 Sonstiges (bitte angeben)_2
-VAR9;Bitte geben Sie an, inwieweit Sie den folgenden Aussagen zustimmen. Es macht mir Spaß, technische Systeme auszuprobieren.
-VAR10;X23 Technische Systeme machen mich unabhängig.
-VAR11;X24 Technische Systeme machen vieles umständlicher.
-VAR12;X25 Technische Systeme erleichtern mir den Alltag.
-VAR13;X26 Auch ohne Kaufabsicht informiere ich mich gerne über neue technische Systeme.
-VAR14;X27 Technische Systeme verringern den persönlichen Kontakt zu Anderen.
-VAR15;Bitte schätzen Sie Ihren Umgang mit technischen Problemen ein: Ich kann ziemlich viele der technischen Probleme, mit denen ich konfrontiert werde, alleine lösen.
-VAR16;X29 Technische Geräte sind oft undurchschaubar und schwer zu beherrschen.
-VAR17;X30 Es macht mir richtig Spaß, ein technisches Problem zu knacken.
-VAR18;X31 Weil ich mit bisherigen technischen Problemen gut zurecht gekommen bin, blicke ich auch künftigen technischen Problemen optimistisch entgegen.
-VAR19;X32 Ich fühle mich technischen Geräten gegenüber so hilflos, dass ich die Finger von ihnen lasse.
-VAR20;X33 Auch wenn Widerstände auftreten, bearbeite ich ein technisches Problem weiter.
-VAR21;X34 Wenn ich ein technisches Problem löse, so geschieht es meistens durch Glück.
-VAR22;X35 Die meisten technischen Probleme sind so kompliziert, dass es wenig Sinn hat, sich mit ihnen auseinander zu setzen.
-VAR23;Bitte bewerten Sie folgende Aussagen: Ich halte mich mithilfe von sozialen Online-Netzwerken auf dem Laufenden.
-VAR24;X40 Ich bin in der Lage einen beliebigen Online-Inhalt (z.B. Bild, Datei) lokal abzuspeichern.
-VAR25;X41 Ich benutze Tastenkombinationen (z.B. Strg + C) um produktiver zu arbeiten.
-VAR26;X42 Um mir einen Beitrag (z.B. einen Artikel oder ein Video) zu einem späteren Zeitpunkt nochmal anschauen zu können, speichere ich diesen auf dem sozialen Online-Netzwerk ab.
-VAR27;X43 Mir ist bekannt, welches soziale Online-Netzwerk ich als App verwenden kann.
-VAR28;X44 Wenn mir Beiträge anderer Personen (z.B. Bilder, Kommentare, Links) auf sozialen Online-Netzwerken gefallen, teile ich diese.
-VAR29;X45 Ich kann erkennen, wann ich mit meinen Daten für bestimmte Web-Inhalte bezahle (z.B. Datenerfassung durch Cookies).
-VAR30;X47 Wenn ich im Internet surfe, habe ich immer meinen AdBlocker (Filterprogramm, die Werbung auf Internetseiten blockieren) aktiviert.
-VAR31;X48 Beim Installieren neuer Software, achte ich bewusst darauf keine Toolbars (Symbolleiste im Browser mit unterschiedlichen Bedienelementen) mit zu installieren.
-VAR32;Bitte bewerten Sie folgende Aussagen:_1 Ich benutze soziale Online-Netzwerke, um mich zu informieren. (z.B. über Nachrichten, lokale Angebote, Veranstaltungen, etc.)
-VAR33;X55 Mit meinen Suchbegriffen finde ich bei einer Suchmaschinen-Anfrage immer genau das, was ich suche/ wissen möchte.
-VAR34;X56 Ich benutze Hashtags (#) um Suchen in sozialen Online-Netzwerken durchzuführen.
-VAR35;X57 Meistens muss ich viele verschiedene Stichworte in einer Suche eingeben, bevor ich gesuchte Inhalte finde.
-VAR36;X58 Manchmal lande ich auf Webseiten, ohne zu wissen, wie ich dort hingekommen bin.
-VAR37;X59 Die Navigation innerhalb eines sozialen Online-Netzwerkes fällt mir leicht (ich erreiche die Übersichtsseite zu Einstellungen und der Einsicht meiner persönlichen Angaben ohne große Mühe).
-VAR38;X60 Ich bin mit den Problemen online-basierter Informationsbeschaffung vertraut. (Ich bin in diesem Zusammenhang mit mindestens zwei der folgenden Begriffe vertraut: Internetsicherheit, Filterblase, Algorithmus, Urheberrechte).
-VAR39;X61 Falls ich mir über den Wahrheitsgehalt eines Ergebnisses nicht sicher bin, da es nicht vertrauenserweckend scheint, setze ich meine Suche einfach auf einer anderen Seite fort.
-VAR40;X62 Wenn ich unerwünschte Nachrichten in meinem E-Mail Postfach habe, identifiziere ich diese als Spam-E-Mails._1
-VAR41;X63 Der Einsatz von Social Bots (Programme, die in sozialen Netzwerken menschliche Verhaltensmuster simulieren) ist mir bekannt.
-VAR42;X64 Nachrichten von Social Bots erkenne ich nach wenigen Sekunden._1
-VAR43;X65 Ich habe einen eigenen Blog (öffentliche Webseite, die mit persönlichen Kommentaren zu einem bestimmten Thema ergänzt wird)._1
-VAR44;X66 Ich verfolge regelmäßig (mind. 1x pro Woche) Blogs, die mich interessieren._1
-VAR45;X67 Wenn ich einen Kettenbrief in WhatsApp erhalte, der vor einem Virus warnt, leite ich diesen an alle meine Kontakte weiter._1
-VAR46;X70 Der Umgang mit sozialen Online-Netzwerken bereitet mir Unbehagen.
-VAR47;X71 Es fällt mir leicht, Inhalte in sozialen Online-Netzwerken zu erstellen.
-VAR48;X72 Inhalte auf sozialen Online-Netzwerken zu erstellen (z.B. einen Beitrag erstellen oder ein Bild hochladen etc.), stellt für mich ein Problem dar.
-VAR49;X73 Ich finde auf sozialen Online-Netzwerken immer die Beiträge und Informationen, die mich interessieren.
-VAR50;X74 Die Inhalte von Beiträgen und Informationen, die ich in sozialen Online-Netzwerken erhalte, überfordern mich.
-VAR51;X75 Falls ich auf unangebrachte Inhalte in sozialen Online-Netzwerken stoße, gehe ich damit entsprechend um (z.B. Beitrag melden, Nutzer blockieren).
-VAR52;X76 Wenn ich unangebrachte Inhalte in sozialen Online-Netzwerken entdecke, bin ich überfordert.
-VAR53;Hier ist Platz für Ihre Fragen oder Anregungen: Open-Ended Response_1
+VAR3; Response_1 Welchen h�chsten Bildungsabschluss haben Sie (bisher) erlangt?
+VAR4;Ich nutze folgendes soziales Online-Netzwerk: Facebook
+VAR5;X17 Instagram
+VAR6;X18 Twitter
+VAR7;X19 Snapchat
+VAR8;X20 Youtube
+VAR9;X21 Sonstiges (bitte angeben)_2
+VAR10;Bitte geben Sie an, inwieweit Sie den folgenden Aussagen zustimmen. Es macht mir Spaß, technische Systeme auszuprobieren.
+VAR11;X23 Technische Systeme machen mich unabhängig.
+VAR12;X24 Technische Systeme machen vieles umständlicher.
+VAR13;X25 Technische Systeme erleichtern mir den Alltag.
+VAR14;X26 Auch ohne Kaufabsicht informiere ich mich gerne über neue technische Systeme.
+VAR15;X27 Technische Systeme verringern den persönlichen Kontakt zu Anderen.
+VAR16;Bitte schätzen Sie Ihren Umgang mit technischen Problemen ein: Ich kann ziemlich viele der technischen Probleme, mit denen ich konfrontiert werde, alleine lösen.
+VAR17;X29 Technische Geräte sind oft undurchschaubar und schwer zu beherrschen.
+VAR18;X30 Es macht mir richtig Spaß, ein technisches Problem zu knacken.
+VAR19;X31 Weil ich mit bisherigen technischen Problemen gut zurecht gekommen bin, blicke ich auch künftigen technischen Problemen optimistisch entgegen.
+VAR20;X32 Ich fühle mich technischen Geräten gegenüber so hilflos, dass ich die Finger von ihnen lasse.
+VAR21;X33 Auch wenn Widerstände auftreten, bearbeite ich ein technisches Problem weiter.
+VAR22;X34 Wenn ich ein technisches Problem löse, so geschieht es meistens durch Glück.
+VAR23;X35 Die meisten technischen Probleme sind so kompliziert, dass es wenig Sinn hat, sich mit ihnen auseinander zu setzen.
+VAR24;Bitte bewerten Sie folgende Aussagen: Ich halte mich mithilfe von sozialen Online-Netzwerken auf dem Laufenden.
+VAR25;X40 Ich bin in der Lage einen beliebigen Online-Inhalt (z.B. Bild, Datei) lokal abzuspeichern.
+VAR26;X41 Ich benutze Tastenkombinationen (z.B. Strg + C) um produktiver zu arbeiten.
+VAR27;X42 Um mir einen Beitrag (z.B. einen Artikel oder ein Video) zu einem späteren Zeitpunkt nochmal anschauen zu können, speichere ich diesen auf dem sozialen Online-Netzwerk ab.
+VAR28;X43 Mir ist bekannt, welches soziale Online-Netzwerk ich als App verwenden kann.
+VAR29;X44 Wenn mir Beiträge anderer Personen (z.B. Bilder, Kommentare, Links) auf sozialen Online-Netzwerken gefallen, teile ich diese.
+VAR30;X45 Ich kann erkennen, wann ich mit meinen Daten für bestimmte Web-Inhalte bezahle (z.B. Datenerfassung durch Cookies).
+VAR31;X47 Wenn ich im Internet surfe, habe ich immer meinen AdBlocker (Filterprogramm, die Werbung auf Internetseiten blockieren) aktiviert.
+VAR32;X48 Beim Installieren neuer Software, achte ich bewusst darauf keine Toolbars (Symbolleiste im Browser mit unterschiedlichen Bedienelementen) mit zu installieren.
+VAR33;Bitte bewerten Sie folgende Aussagen:_1 Ich benutze soziale Online-Netzwerke, um mich zu informieren. (z.B. über Nachrichten, lokale Angebote, Veranstaltungen, etc.)
+VAR34;X55 Mit meinen Suchbegriffen finde ich bei einer Suchmaschinen-Anfrage immer genau das, was ich suche/ wissen möchte.
+VAR35;X56 Ich benutze Hashtags (#) um Suchen in sozialen Online-Netzwerken durchzuführen.
+VAR36;X57 Meistens muss ich viele verschiedene Stichworte in einer Suche eingeben, bevor ich gesuchte Inhalte finde.
+VAR37;X58 Manchmal lande ich auf Webseiten, ohne zu wissen, wie ich dort hingekommen bin.
+VAR38;X59 Die Navigation innerhalb eines sozialen Online-Netzwerkes fällt mir leicht (ich erreiche die Übersichtsseite zu Einstellungen und der Einsicht meiner persönlichen Angaben ohne große Mühe).
+VAR39;X60 Ich bin mit den Problemen online-basierter Informationsbeschaffung vertraut. (Ich bin in diesem Zusammenhang mit mindestens zwei der folgenden Begriffe vertraut: Internetsicherheit, Filterblase, Algorithmus, Urheberrechte).
+VAR40;X61 Falls ich mir über den Wahrheitsgehalt eines Ergebnisses nicht sicher bin, da es nicht vertrauenserweckend scheint, setze ich meine Suche einfach auf einer anderen Seite fort.
+VAR41;X62 Wenn ich unerwünschte Nachrichten in meinem E-Mail Postfach habe, identifiziere ich diese als Spam-E-Mails._1
+VAR42;X63 Der Einsatz von Social Bots (Programme, die in sozialen Netzwerken menschliche Verhaltensmuster simulieren) ist mir bekannt.
+VAR43;X64 Nachrichten von Social Bots erkenne ich nach wenigen Sekunden._1
+VAR44;X65 Ich habe einen eigenen Blog (öffentliche Webseite, die mit persönlichen Kommentaren zu einem bestimmten Thema ergänzt wird)._1
+VAR45;X66 Ich verfolge regelmäßig (mind. 1x pro Woche) Blogs, die mich interessieren._1
+VAR46;X67 Wenn ich einen Kettenbrief in WhatsApp erhalte, der vor einem Virus warnt, leite ich diesen an alle meine Kontakte weiter._1
+VAR47;X70 Der Umgang mit sozialen Online-Netzwerken bereitet mir Unbehagen.
+VAR48;X71 Es fällt mir leicht, Inhalte in sozialen Online-Netzwerken zu erstellen.
+VAR49;X72 Inhalte auf sozialen Online-Netzwerken zu erstellen (z.B. einen Beitrag erstellen oder ein Bild hochladen etc.), stellt für mich ein Problem dar.
+VAR50;X73 Ich finde auf sozialen Online-Netzwerken immer die Beiträge und Informationen, die mich interessieren.
+VAR51;X74 Die Inhalte von Beiträgen und Informationen, die ich in sozialen Online-Netzwerken erhalte, überfordern mich.
+VAR52;X75 Falls ich auf unangebrachte Inhalte in sozialen Online-Netzwerken stoße, gehe ich damit entsprechend um (z.B. Beitrag melden, Nutzer blockieren).
+VAR53;X76 Wenn ich unangebrachte Inhalte in sozialen Online-Netzwerken entdecke, bin ich überfordert.
+VAR54;Hier ist Platz für Ihre Fragen oder Anregungen: Open-Ended Response_1
