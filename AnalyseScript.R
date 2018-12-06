@@ -179,23 +179,19 @@ print("Hier werden später Grafiken erstellt. Thema ab dem 16.11.2018")
 
 ##R Codes zur Überprüfung unserer 3 Hypothesen (vgl. README.md)
 
-  ##Technikverstaendnis - Alter (H1,H0)
-##Informationsmanagement - Alter (H1,H0)
   t.test(age,TECH)
 t.test(age, IMIBPL)
 t.test(age, IMOSIMIN)
 t.test(age, IMIBWERTPL)
 t.test(age, IMIBWERT)
 
-  ##Technikverständnis - KUT (H1,H0)
-##Informationsmanagement - KUT (H1,H0)
   t.test(KUT, TVV)
 t.test(KUT, IMIBPL)
 t.test(KUT, IMOSIMIN)
 t.test(KUT, IMIBWERTPL)
 t.test(KUT, IMIBWERT)
   
-## KUT - Alter (H1,H0)
 t.test(KUT, age)
+
 saveRDS(data,"data/DigitaleMuendigkeit2.rds")
 
