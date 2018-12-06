@@ -25,6 +25,14 @@ H1: Es besteht ein Unterschied zwischen den digitalen Kompetenzen „Technikvers
 H0: Es besteht kein Unterschied zwischen der KUT abhängig vom Alter.
 H1: Es besteht ein Unterschied zwischen der KUT abhängig vom Alter.
 
+##### Hinweise zum Umgang mit P-Values
+Der p-Wert wird definiert als: „Die Wahrscheinlichkeit des beobachteten Ergebnisses (inkl. extremerer Ergebnisse), wenn die Nullhypothese stimmt.“ Als Wahrscheinlichkeitswert kann er Werte von 0-1 annehmen. Es wird immer mit der Voraussetzung der Richtigkeit der Nullhypothese gearbeitet. Der p-Wert sagt also NICHT aus, wie wahrscheinlich die Nullhypothese ist. Je geringer der p-Wert ist, desto unwahrscheinlicher ist die Richtigkeit der Nullhypothese. Die Kommunikationswissenschaft hat hier eine Grenze 5% formuliert. Ist der p-Wert kleiner als 5%, wird die Nullhypothese verworfen. Als statistisch signifikant bewertet wird eine Befragung, sobald die Nullhypothese aufgegeben und die Alternativhypothese eingesetzt wird. Kritiker dieses Wertes sprechen von willkürlich festgelegten Grenzen, die die Signifikanz einer Umfrage deutlich beeinflussen. Oftmals wird der p-Wert falsch verstanden, als die Wahrscheinlichkeit, dass die Nullhypothese sich als richtig erweist. Dass der Wert keine geraden Ergebnisse über die Wahrscheinlichkeit einer Hypothese gibt, sondern den Exkurs über die Wahrscheinlichkeit der Ergebnisse nimmt, ist ein weiterer Kritikpunkt.  
+
+ 
+
+Quellen: A Dirty Dozen: Twelve P-Value Misconceptions – Steven Goodman
+
+http://www.perfendo.org/docs/BayesProbability/twelvePvaluemisconceptions.pdf
 
 __
 
