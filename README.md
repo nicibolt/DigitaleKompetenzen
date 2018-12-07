@@ -14,8 +14,8 @@ Welchen Einfluss haben das Alter eines Nutzers einerseits und die KUT des Nutzer
 
 #### Unterschieds- und Nullhypothesen
 ##### 1. Unterschiedshypothese:
-H0: Es besteht kein Unterschied zwischen den digitalen Kompetenzen „Technikverständnis” und „Informationsmanagement” im Umgang mit sozialen Online-Netzwerken abhängig vom Alter.
-H1: Es besteht ein Unterschied zwischen den digitalen Kompetenzen „Technikverständnis” und „Informationsmanagement” im Umgang mit sozialen Online-Netzwerken abhängig vom Alter.
+H0: Abhängig vom Alter besteht kein Unterschied in den digitalen Kompetenzen „Technikverständnis” und „Informationsmanagement” im Umgang mit sozialen Online-Netzwerken.
+H1: Abhängig vom Alter besteht ein Unterschied in den digitalen Kompetenzen „Technikverständnis” und „Informationsmanagement” im Umgang mit sozialen Online-Netzwerken.
 
 ##### 2. Unterschiedshypothese:
 H0: Es besteht kein Unterschied zwischen den digitalen Kompetenzen „Technikverständnis” und „Informationsmanagement” im Umgang mit sozialen Online-Netzwerken abhängig von der KUT.
