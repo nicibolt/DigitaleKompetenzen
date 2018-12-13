@@ -13,17 +13,39 @@ tsheesy
 Welchen Einfluss haben das Alter eines Nutzers einerseits und die KUT des Nutzers andererseits auf dessen digitalen Kompetenzen "Technikverständnis" und "Informationsmanagement" im Umgang mit sozialen Online-Netzwerken?
 
 #### Unterschieds- und Nullhypothesen
-##### 1. Unterschiedshypothese:
-H0: Abhängig vom Alter besteht kein Unterschied in den digitalen Kompetenzen „Technikverständnis” und „Informationsmanagement” im Umgang mit sozialen Online-Netzwerken.
-H1: Abhängig vom Alter besteht ein Unterschied in den digitalen Kompetenzen „Technikverständnis” und „Informationsmanagement” im Umgang mit sozialen Online-Netzwerken.
 
-##### 2. Unterschiedshypothese:
-H0: Es besteht kein Unterschied zwischen den digitalen Kompetenzen „Technikverständnis” und „Informationsmanagement” im Umgang mit sozialen Online-Netzwerken abhängig von der KUT.
-H1: Es besteht ein Unterschied zwischen den digitalen Kompetenzen „Technikverständnis” und „Informationsmanagement” im Umgang mit sozialen Online-Netzwerken abhängig von der KUT.
+### NEUE Unterschiedshypothesen:
 
-##### 3. Unterschiedshypothese:
-H0: Es besteht kein Unterschied zwischen der KUT abhängig vom Alter.
-H1: Es besteht ein Unterschied zwischen der KUT abhängig vom Alter.
+## Hypothese 1:
+H1: Es besteht ein Unterschied zwischen dem Alter einer Person und der Ausprägung digitaler Kompetenzen im Umgang mit sozialen Online-Netzwerken.  
+H0: Es besteht kein Unterschied zwischen dem Alter einer Person und der Ausprägung digitaler Kompetenzen im Umgang mit sozialen Netzwerken. 
+(>>one-way Manova, da eine UV und 3 AVs?)
+
+## Hypothese 2: 
+H1: Es besteht ein Unterschied zwischen der KUT und der Ausprägung ihrer digitalen Kompetenz „Technikverständnis“. 
+H0: Es besteht kein Unterschied zwischen der KUT und der Ausprägung ihrer digitalen Kompetenz „Technikverständnis“. 
+(>> one-way Anova, da eine UV und eine AV?)
+
+## Hypothese 3: 
+H1: Es besteht ein Unterschied zwischen der KUT und der Ausprägung ihrer digitalen Kompetenz „Informationsmanagement“. 
+H0: Es besteht kein Unterschied zwischen der KUT und der Ausprägung ihrer digitalen Kompetenz „Informationsmanagement“. 
+(>> one-way Anova, da eine UV und eine AV?)
+
+## Hypothese 4: 
+H1: Es macht einen Unterschied in KUT, ob ein Mensch eine hohe Ausprägung digitaler Kompetenzen hat oder nicht. 
+H0: Es macht keinen Unterschied in KUT, ob ein Mensch eine hohe Ausprägung digitaler Kompetenzen hat oder nicht. 
+(>> verbundener T-Test?)
+
+## Hypothese 5:
+H1: Es macht einen Unterschied im Umgang mit sozialen Online-Netzwerken, ob ein Mensch eine hohe KUT (4,5-6) hat oder eine niedrige KUT (0-4,4) hat. 
+H0: Es macht keinen Unterschied im Umgang mit sozialen Online-Netzwerken, ob ein Mensch eine hohe KUT (4,5-6) hat oder eine niedrige KUT (0-4,4) hat. 
+(>> two-way Anova, da zwei UVs und eine AV?)
+
+## Hypothese 6:
+H1: Es macht einen Unterschied im Umgang mit sozialen Online-Netzwerken, ob ein Mensch eine hohe Ausprägung digitaler Kompetenzen (4,5-6) hat oder nicht. 
+H0: Es macht keinen Unterschied im Umgang mit sozialen Online-Netzwerken, ob ein Mensch eine hohe Ausprägung digitaler Kompetenzen (4,5-6) hat oder nicht. 
+
+
 
 ##### Hinweise zum Umgang mit P-Values
 Der p-Wert wird definiert als: „Die Wahrscheinlichkeit des beobachteten Ergebnisses (inkl. extremerer Ergebnisse), wenn die Nullhypothese stimmt.“ Als Wahrscheinlichkeitswert kann er Werte von 0-1 annehmen. Es wird immer mit der Voraussetzung der Richtigkeit der Nullhypothese gearbeitet. Der p-Wert sagt also NICHT aus, wie wahrscheinlich die Nullhypothese ist. Je geringer der p-Wert ist, desto unwahrscheinlicher ist die Richtigkeit der Nullhypothese. Die Kommunikationswissenschaft hat hier eine Grenze 5% formuliert. Ist der p-Wert kleiner als 5%, wird die Nullhypothese verworfen. Als statistisch signifikant bewertet wird eine Befragung, sobald die Nullhypothese aufgegeben und die Alternativhypothese eingesetzt wird. Kritiker dieses Wertes sprechen von willkürlich festgelegten Grenzen, die die Signifikanz einer Umfrage deutlich beeinflussen. Oftmals wird der p-Wert falsch verstanden, als die Wahrscheinlichkeit, dass die Nullhypothese sich als richtig erweist. Dass der Wert keine geraden Ergebnisse über die Wahrscheinlichkeit einer Hypothese gibt, sondern den Exkurs über die Wahrscheinlichkeit der Ergebnisse nimmt, ist ein weiterer Kritikpunkt.  
