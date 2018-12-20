@@ -167,7 +167,7 @@ data <- data %>%
   select(-starts_with("blog_", ignore.case = F)) %>% 
   select(-starts_with("son_use_", ignore.case = F)) 
 
-warnings()
+
 
 ##### FEEDBACK Datacleaning: Alles super! Den Bildungsstand sollten Sie aber nicht löschen (direkt am Anfang), der ist wichtig für die Stichprobenbeschreibung. ----
 ##### Wenn inhaltlich alles korrekt ist (z.B. die richtigen Items negativ codiert sind) werden Sie im Januar wenig Arbeit haben :-) 
@@ -200,9 +200,8 @@ saveRDS(data,"data/DigitaleMuendigkeit2.rds")
 ## Hypothese: Es besteht ein Zusammenhang zwischen dem KUT eines Nutzers und dessen digitalen Kompetenzen.
 ## H0: Es besteht kein Zusammenhang zwischen dem KUT eines Nutzers und dessen digitalen Kompetenzen.
 ## Lineare Regression. UV: KUT, AV: digitale Kompetenzen:
-r
-df <- hcictools::Digitale Kompetenz
-jmv::linReg(df, dep=c("Informationsmanagement", "Technikverständnis", covs=c(kut), blocks=list ("Informationsmanagement","Technikverständnis"),r2Adj=T, stdEst=T, anova=T))
+df <- hcictools::TECH_VERS+INF_MAN
+jmv::linReg(df, dep=c("KUT", covs=c("TECH_VERS+INF_MAN"), blocks=list ("KUT"),r2Adj=T, stdEst=T, anova=T))
 
 ## Ergebnis: H0 verwerfen.
 
@@ -211,7 +210,7 @@ jmv::linReg(df, dep=c("Informationsmanagement", "Technikverständnis", covs=c(ku
 ## H0: Es besteht kein Zusammenhang zwischen dem Alter und dem Umgang mit sozialen Online-Netzwerken.
 ## Kendall´s tau Rangkorrelation. UV: Alter, AV: Umgang mit sozialen Online-Netzwerken:
 cor.test(data=df_multi,
-         ~height+round(shoesize), method= "kendall")
+         ~age+SON_USE, method= "kendall")
 ## Ergebnis: H0 verwerfen.
 
 #### Zusammenhangshypothese 3: "Technikverständnis" und "Informationsmanagement" ----
@@ -219,5 +218,5 @@ cor.test(data=df_multi,
 ## H0: Es besteht kein Zusammenhang in der Stärke der Ausprägung der digitalen Kompetenz “Technikverständnis” und der Stärke der Ausprägung der digitalen Kompetenz “Informationsmanagement”.
 ## Korrelation. UV: Stärke der Ausprägung "Technikverständnis", AV: Stärke der Ausprägung "Informationsmanagement"
 cor.test(data=df_multi,          
-         ~Technikverständnis+Informationsmanagement)
+         ~TECH_VERS+INF_MAN)
 ## Ergebnis: H0 verwerfen.

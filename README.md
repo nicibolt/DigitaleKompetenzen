@@ -60,6 +60,19 @@ H1: Ist die digitale Kompetenz “Technikverständnis” stark ausgeprägt, ist 
 H0:  Es besteht kein Zusammenhang in der Stärke der Ausprägung der digitalen Kompetenz “Technikverständnis” und der Stärke der Ausprägung der digitalen Kompetenz “Informationsmanagement”.
 
 
+#### Vorschlag zur Vereinfachung der Schluesselliste ----
+
+#schluesselliste <- list( ON_SON= c("on_fb", "on_ig", "on_tw", "on_sc", "on_yt", "on_other"),
+                          TECH = c("tech_1", "tech_2", "-tech_3", "tech_4", "tech_5", "-tech_6"),
+                          KUT = c("kut_1", "-kut_2", "kut_3", "kut_4", "-kut_5", "kut_6", "-kut_7","-kut_8"),
+                          TECH_VERS = c("tvv_1", "tva_1", "tva_2", "tva_3", "tva_4", "tva_5", "tvo_1","tvo_2", "tvo_3", "blog_1"),
+                          INF_MAN = c("IMIBpl_1", "IMIBpl_2", "IMIBpl_3", "-IMOSImin_1", "-IMOSImin_2","IMOSIpl_1", "IMIBwertpl_1",                           "IMIBwert_1","-MIBwert_3","MIBwert_4","socialbots_1", "socialbots_2", "blog_2"),
+                          SON_USE = c("son_use_1", "-son_use_2", "-son_use_3", "son_use_4","-son_use_5", "son_use_6", "-son_use_7"))
+                        
+#BEGRÜNDUNG: „blog_2“  Verfolgung Blog  IMIBschaff: Informationsmanagement – Informationsbeschaffung; "socialbots_1" + "socialbots_2”  Einsatz und Nachrichten von SB  MIBwert: Informationsmanagement – Informatnsbewertung; „blog_1“  Führen eines eigenen blogs  TVA: Technikverständnis – Ausführung
+
+
+
 ##### Hinweise zum Umgang mit P-Values
 Der p-Wert wird definiert als: „Die Wahrscheinlichkeit des beobachteten Ergebnisses (inkl. extremerer Ergebnisse), wenn die Nullhypothese stimmt.“ Es wird immer mit der Voraussetzung der Richtigkeit der Nullhypothese gearbeitet. Oftmals wird der p-Wert genau gegenteilig und damit falsch verstanden - nämlich als die Wahrscheinlichkeit, dass die Nullhypothese sich als richtig erweist. Der p-Wert sagt also NICHT aus, wie wahrscheinlich die Nullhypothese ist. Je geringer der p-Wert ist, desto unwahrscheinlicher ist die Richtigkeit der Nullhypothese. Es besteht jedoch ein Zusammenhang zwischen einem kleinen p-Wert und der Alphafehlerwahrscheinlichkeit.
 Als Wahrscheinlichkeitswert kann der p-Wert Werte von 0-1 annehmen. In der Kommunikationswissenschaft liegt der gängige Signifikanzwert bei 5%. Ist der p-Wert kleiner als 5%, wird die Nullhypothese verworfen. Als statistisch signifikant bewertet wird das Ergebnis einer Befragung, sobald die Nullhypothese aufgegeben und die Alternativhypothese angenommen wird. Allerdings sagt ein signifikantes Ergebnis nichts über den tatsächlichen Wahrheitsgehalt einer Hypothese aus. 
