@@ -14,7 +14,7 @@ Welchen Einfluss haben das Alter eines Nutzers einerseits und die KUT des Nutzer
 
 #### Unterschieds- und Nullhypothesen
 
-### NEUE Unterschiedshypothesen:
+### Unterschiedshypothesen 
 
 ## Hypothese 1:
 H1: Es besteht ein Unterschied zwischen dem Alter einer Person und der Ausprägung digitaler Kompetenzen im Umgang mit sozialen Online-Netzwerken.  
@@ -45,6 +45,19 @@ H0: Es macht keinen Unterschied im Umgang mit sozialen Online-Netzwerken, ob ein
 H1: Es macht einen Unterschied im Umgang mit sozialen Online-Netzwerken, ob ein Mensch eine hohe Ausprägung digitaler Kompetenzen (4,5-6) hat oder nicht. 
 H0: Es macht keinen Unterschied im Umgang mit sozialen Online-Netzwerken, ob ein Mensch eine hohe Ausprägung digitaler Kompetenzen (4,5-6) hat oder nicht. 
 
+#### Zusammenhangs- und Nullhypothesen
+
+## Hypothese 1
+H1: Es besteht ein Zusammenhang zwischen dem KUT eines Nutzers und dessen digitalen Kompetenzen.
+H0: Es besteht kein Zusammenhang zwischen dem KUT eines Nutzers und dessen digitalen Kompetenzen.
+
+## Hypothese 2:
+H1:Es besteht ein Zusammenhang zwischen dem Alter und dem Umgang mit sozialen Online-Netzwerken.
+H0: Es besteht kein Zusammenhang zwischen dem Alter und dem Umgang mit sozialen Online-Netzwerken.
+
+##Hypothese 3:
+H1: Ist die digitale Kompetenz “Technikverständnis” stark ausgeprägt, ist auch die digitale Kompetenz “Informationsmanagement” stark ausgeprägt.
+H0:  Es besteht kein Zusammenhang in der Stärke der Ausprägung der digitalen Kompetenz “Technikverständnis” und der Stärke der Ausprägung der digitalen Kompetenz “Informationsmanagement”.
 
 
 ##### Hinweise zum Umgang mit P-Values
@@ -89,4 +102,4 @@ Diese Version wurde am 02.11.2018 aus folgenden Gründen angepasst:
 * Mithilfe von sechs selbstproduzierten Dummy-Datensätzen (Alter 99) wurde ein Datacleaning durchgeführt.
 
 *_Stand 06.12.2018_*
-* Für die weitere Erhebung wurdem Nullhypothesen und Unterschiedshypothesen hinzugefügt. Durch Two-Sample-Tests können die zu       erwartenden Beobachtungen zur Interpretation beitragen.
+* Für die weitere Erhebung wurdem Nullhypothesen und Unterschiedshypothesen hinzugefügt. Durch Two-Sample-Tests können die zu erwartenden Beobachtungen zur Interpretation beitragen.
