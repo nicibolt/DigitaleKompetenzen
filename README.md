@@ -22,28 +22,16 @@ H0: Es besteht kein Unterschied zwischen dem Alter einer Person und der Auspräg
 (>>one-way Manova, da eine UV und 3 AVs?)
 
 ## Hypothese 2: 
-H1: Es besteht ein Unterschied zwischen der KUT und der Ausprägung ihrer digitalen Kompetenz „Technikverständnis“. 
-H0: Es besteht kein Unterschied zwischen der KUT und der Ausprägung ihrer digitalen Kompetenz „Technikverständnis“. 
-(>> one-way Anova, da eine UV und eine AV?)
-
-## Hypothese 3: 
-H1: Es besteht ein Unterschied zwischen der KUT und der Ausprägung ihrer digitalen Kompetenz „Informationsmanagement“. 
-H0: Es besteht kein Unterschied zwischen der KUT und der Ausprägung ihrer digitalen Kompetenz „Informationsmanagement“. 
-(>> one-way Anova, da eine UV und eine AV?)
-
-## Hypothese 4: 
 H1: Es macht einen Unterschied in KUT, ob ein Mensch eine hohe Ausprägung digitaler Kompetenzen hat oder nicht. 
 H0: Es macht keinen Unterschied in KUT, ob ein Mensch eine hohe Ausprägung digitaler Kompetenzen hat oder nicht. 
 (>> verbundener T-Test?)
 
-## Hypothese 5:
-H1: Es macht einen Unterschied im Umgang mit sozialen Online-Netzwerken, ob ein Mensch eine hohe KUT (4,5-6) hat oder eine niedrige KUT (0-4,4) hat. 
+## Hypothese 3: 
+1: Es macht einen Unterschied im Umgang mit sozialen Online-Netzwerken, ob ein Mensch eine hohe KUT (4,5-6) hat oder eine niedrige KUT (0-4,4) hat. 
 H0: Es macht keinen Unterschied im Umgang mit sozialen Online-Netzwerken, ob ein Mensch eine hohe KUT (4,5-6) hat oder eine niedrige KUT (0-4,4) hat. 
 (>> two-way Anova, da zwei UVs und eine AV?)
 
-## Hypothese 6:
-H1: Es macht einen Unterschied im Umgang mit sozialen Online-Netzwerken, ob ein Mensch eine hohe Ausprägung digitaler Kompetenzen (4,5-6) hat oder nicht. 
-H0: Es macht keinen Unterschied im Umgang mit sozialen Online-Netzwerken, ob ein Mensch eine hohe Ausprägung digitaler Kompetenzen (4,5-6) hat oder nicht. 
+
 
 #### Zusammenhangs- und Nullhypothesen
 
