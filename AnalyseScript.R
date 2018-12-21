@@ -167,7 +167,7 @@ data <- data %>%
   select(-starts_with("blog_", ignore.case = F)) %>% 
   select(-starts_with("son_use_", ignore.case = F)) 
 
-warnings()
+
 
 ##### FEEDBACK Datacleaning: Alles super! Den Bildungsstand sollten Sie aber nicht löschen (direkt am Anfang), der ist wichtig für die Stichprobenbeschreibung. ----
 ##### Wenn inhaltlich alles korrekt ist (z.B. die richtigen Items negativ codiert sind) werden Sie im Januar wenig Arbeit haben :-) 
@@ -195,3 +195,28 @@ t.test(KUT, age)
 
 saveRDS(data,"data/DigitaleMuendigkeit2.rds")
 
+
+#### Zusammenhangshypothese 1: KUT und digitale Kompetenzen ----
+## Hypothese: Es besteht ein Zusammenhang zwischen dem KUT eines Nutzers und dessen digitalen Kompetenzen.
+## H0: Es besteht kein Zusammenhang zwischen dem KUT eines Nutzers und dessen digitalen Kompetenzen.
+## Lineare Regression. UV: KUT, AV: digitale Kompetenzen:
+df <- hcictools::TECH_VERS+INF_MAN
+jmv::linReg(df, dep=c("KUT", covs=c("TECH_VERS+INF_MAN"), blocks=list ("KUT"),r2Adj=T, stdEst=T, anova=T))
+
+## Ergebnis: H0 verwerfen.
+
+#### Zusammenhangshypothese 2: Alter und Umgang mit sozialen Online-Netzwerken ----
+## Hypothese: Es besteht ein Zusammenhang zwischen dem Alter und dem Umgang mit sozialen Online-Netzwerken.
+## H0: Es besteht kein Zusammenhang zwischen dem Alter und dem Umgang mit sozialen Online-Netzwerken.
+## Kendall´s tau Rangkorrelation. UV: Alter, AV: Umgang mit sozialen Online-Netzwerken:
+cor.test(data=df_multi,
+         ~age+SON_USE, method= "kendall")
+## Ergebnis: H0 verwerfen.
+
+#### Zusammenhangshypothese 3: "Technikverständnis" und "Informationsmanagement" ----
+## Hypothese: Ist die digitale Kompetenz “Technikverständnis” stark ausgeprägt, ist auch die digitale Kompetenz “Informationsmanagement” stark ausgeprägt.
+## H0: Es besteht kein Zusammenhang in der Stärke der Ausprägung der digitalen Kompetenz “Technikverständnis” und der Stärke der Ausprägung der digitalen Kompetenz “Informationsmanagement”.
+## Korrelation. UV: Stärke der Ausprägung "Technikverständnis", AV: Stärke der Ausprägung "Informationsmanagement"
+cor.test(data=df_multi,          
+         ~TECH_VERS+INF_MAN)
+## Ergebnis: H0 verwerfen.
