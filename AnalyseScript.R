@@ -202,8 +202,10 @@ saveRDS(data,"data/DigitaleMuendigkeit2.rds")
 ## Lineare Regression. UV: KUT, AV: digitale Kompetenzen:
 df <- hcictools::TECH_VERS+INF_MAN
 jmv::linReg(df, dep=c("KUT", covs=c("TECH_VERS+INF_MAN"), blocks=list ("KUT"),r2Adj=T, stdEst=T, anova=T))
-
 ## Ergebnis: H0 verwerfen.
+## Feedback: Man versteht, was sie meinen, aber der Code ist syntaktisch nicht ganz korrekt.
+## Hinter "KUT" muss die Klammer wieder zugehen, bei den covs muss ein Komma statt des Plus und bei Blocks muss ein Vektor übergeben werden.
+## Und was Sie mit den hcictools vor hatten verstehe ich nicht ganz. 
 
 #### Zusammenhangshypothese 2: Alter und Umgang mit sozialen Online-Netzwerken ----
 ## Hypothese: Es besteht ein Zusammenhang zwischen dem Alter und dem Umgang mit sozialen Online-Netzwerken.
@@ -212,6 +214,7 @@ jmv::linReg(df, dep=c("KUT", covs=c("TECH_VERS+INF_MAN"), blocks=list ("KUT"),r2
 cor.test(data=df_multi,
          ~age+SON_USE, method= "kendall")
 ## Ergebnis: H0 verwerfen.
+## Feedback: Sieht super aus, aber warum kendall? 
 
 #### Zusammenhangshypothese 3: "Technikverständnis" und "Informationsmanagement" ----
 ## Hypothese: Ist die digitale Kompetenz “Technikverständnis” stark ausgeprägt, ist auch die digitale Kompetenz “Informationsmanagement” stark ausgeprägt.
@@ -220,3 +223,7 @@ cor.test(data=df_multi,
 cor.test(data=df_multi,          
          ~TECH_VERS+INF_MAN)
 ## Ergebnis: H0 verwerfen.
+## Feedback: Hier verwenden Sie z.B. Pearson. Sieht auch super aus!
+
+## Feedback: Die Hausaufgabe war eigentlich auch, die Unterschiedshypothesen hier einzutragen. Falls Sie die Zeilen von 182 bis 194 meinen stimmt da leider gar nichts, weil sie es jeweils so aufgeschrieben haben, als sollten zwei Datensätze (nicht etwas Spalten eines einzelnen Datensatzes) miteinander verglichen werden. 
+
