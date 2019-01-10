@@ -130,22 +130,14 @@ raw.short$son_use_7 <- ordered(raw.short$son_use_7, levels = scale.zustimmung2)
 
 library(psych)
 
+
+
 schluesselliste <- list(ON_SON= c("on_fb", "on_ig", "on_tw", "on_sc", "on_yt", "on_other"),
-                        TECH = c("tech_1", "tech_2", "-tech_3", 
-                                     "tech_4", "tech_5", "-tech_6"),
-                        KUT = c("kut_1", "-kut_2", "kut_3", "kut_4", "-kut_5", "kut_6", "-kut_7", "-kut_8"),
-                        TVV = c("tvv_1"),
-                        TVA = c("tva_1", "tva_2", "tva_3", "tva_4", "tva_5"),
-                        TVO = c("tvo_1", "tvo_2", "tvo_3"),
-                        IMIBPL = c("IMIBpl_1", "IMIBpl_2", "IMIBpl_3"),
-                        IMOSIMIN = c("-IMOSImin_1", "-IMOSImin_2"),
-                        IMOSIPL = c("IMOSIpl_1"),
-                        IMIBWERTPL = c("IMIBwertpl_1"),
-                        IMIBWERT = c("IMIBwert_1"),
-                        MIBWERT = c("-MIBwert_3","MIBwert_4"),
-                        SOCIALBOT = c("socialbots_1","socialbots_2"),
-                        BLOG = c("blog_1","blog_2"),
-                        SON_USE = c("son_use_1", "-son_use_2", "-son_use_3", "son_use_4", "-son_use_5", "son_use_6", "-son_use_7"))
+                        TECH = c("tech_1", "tech_2", "-tech_3", "tech_4", "tech_5", "-tech_6"),
+                        KUT = c("kut_1", "-kut_2", "kut_3", "kut_4", "-kut_5", "kut_6", "-kut_7","-kut_8"),
+                        TECH_VERS = c("tvv_1", "tva_1", "tva_2", "tva_3", "tva_4", "tva_5", "tvo_1","tvo_2", "tvo_3", "blog_1"),
+                        INF_MAN = c("IMIBpl_1", "IMIBpl_2", "IMIBpl_3", "-IMOSImin_1", "-IMOSImin_2","IMOSIpl_1", "IMIBwertpl_1",                           "IMIBwert_1","-MIBwert_3","MIBwert_4","socialbots_1", "socialbots_2", "blog_2"),
+                        SON_USE = c("son_use_1", "-son_use_2", "-son_use_3", "son_use_4","-son_use_5", "son_use_6", "-son_use_7"))
 
 scores <- scoreItems(schluesselliste, raw.short, missing = TRUE, min = 1, max = 6)
 
@@ -177,26 +169,40 @@ print("Hier werden später statistische Analysen durchgeführt. Thema ab dem 16.
 # Graphik erstellung ---- 
 print("Hier werden später Grafiken erstellt. Thema ab dem 16.11.2018")
 
-##R Codes zur Überprüfung unserer 3 Hypothesen (vgl. README.md)
-
-  t.test(age,TECH)
-t.test(age, IMIBPL)
-t.test(age, IMOSIMIN)
-t.test(age, IMIBWERTPL)
-t.test(age, IMIBWERT)
-
-  t.test(KUT, TVV)
-t.test(KUT, IMIBPL)
-t.test(KUT, IMOSIMIN)
-t.test(KUT, IMIBWERTPL)
-t.test(KUT, IMIBWERT)
-  
-t.test(KUT, age)
-
 saveRDS(data,"data/DigitaleMuendigkeit2.rds")
 
+####Unterschiedshypothesen: ----
 
-#### Zusammenhangshypothese 1: KUT und digitale Kompetenzen ----
+###Unterschiedshypothese 1: 
+#H1: Es besteht ein Unterschied zwischen jüngeren und älteren Personen in deren digitalen Kompetenzen Technikverständnis und Informationsmanagement.  
+#H0: Es besteht kein Unterschied zwischen jüngeren und älteren Personen in deren digitalen Kompetenzen Technikverständnis und Informationsmanagement. 
+#(>> one-way Manova, da eine UV und 2 AVs)
+
+manova(data, deps= c(“TECH_VERS“ , “INF_MAN“), factors= c(“age“)) 
+#--> Müssen an dieser Stelle zwei Altersgruppen definiert werden? 
+
+###Unteschiedshypothese 2:
+#H1: "Häufignutzer" (Skalenwert größer gleich ) von sozialen Online-Netzwerken, haben eine höhere Ausbildung der digitalen Kompetenz Technikverständnis, als "Wenignutzer" (Skalenwert kleiner gleich ).
+#H0: "Häufignutzer" von sozialen Online-Netzwerken, haben keine höhere Ausbildung der digitalen Kompetenz Technikverständnis, als "Wenignutzer".
+#(>> unverbundener T-Test)
+
+t.test( filter(data, on_fb="mehrmals täglich", "täglich")$TECH_VERS, filter(data, on_fb="wöchentlich", "monatlich", "seltener", "nie", "Ich kenne dieses Netzwerk nicht")$TECH_VERS )
+t.test( filter(data, on_ig="mehrmals täglich", "täglich")$TECH_VERS, filter(data, on_ig="wöchentlich", "monatlich", "seltener", "nie", "Ich kenne dieses Netzwerk nicht")$TECH_VERS )
+t.test( filter(data, on_tw="mehrmals täglich", "täglich")$TECH_VERS, filter(data, on_tw="wöchentlich", "monatlich", "seltener", "nie", "Ich kenne dieses Netzwerk nicht")$TECH_VERS )
+t.test( filter(data, on_sc="mehrmals täglich", "täglich")$TECH_VERS, filter(data, on_sc="wöchentlich", "monatlich", "seltener", "nie", "Ich kenne dieses Netzwerk nicht")$TECH_VERS )
+t.test( filter(data, on_yt="mehrmals täglich", "täglich")$TECH_VERS, filter(data, on_yt="wöchentlich", "monatlich", "seltener", "nie", "Ich kenne dieses Netzwerk nicht")$TECH_VERS )
+t.test( filter(data, on_other="mehrmals täglich", "täglich")$TECH_VERS, filter(data, on_other="wöchentlich", "monatlich", "seltener", "nie", "Ich kenne dieses Netzwerk nicht")$TECH_VERS )
+
+##Unterschiedshypothese 3:
+#H1: Es liegt ein Unterschied zwischen der digitalen Kompetenz Informationsmanagement und Technikverständnis vor. 
+#H0: Es liegt kein Unterschied zwischen der digitalen Kompetenz Informationsmanagement und Technikverständnis vor.  
+#(>> verbundener T-Test)
+
+t.test(data$INF_MAN, data$TECH_VERS, paired= TRUE)
+
+####Zusammenhangshypothesen: ----
+
+### Zusammenhangshypothese 1: KUT und digitale Kompetenzen 
 ## Hypothese: Es besteht ein Zusammenhang zwischen dem KUT eines Nutzers und dessen digitalen Kompetenzen.
 ## H0: Es besteht kein Zusammenhang zwischen dem KUT eines Nutzers und dessen digitalen Kompetenzen.
 ## Lineare Regression. UV: KUT, AV: digitale Kompetenzen:
@@ -204,25 +210,26 @@ jmv::linReg(df, dep=c("KUT"), covs=c("TECH_VERS,INF_MAN"), blocks <- list ("KUT"
 ## Ergebnis: H0 verwerfen.
 ## Feedback: Man versteht, was sie meinen, aber der Code ist syntaktisch nicht ganz korrekt.
 ## Hinter "KUT" muss die Klammer wieder zugehen, bei den covs muss ein Komma statt des Plus und bei Blocks muss ein Vektor übergeben werden.
-## Und was Sie mit den hcictools vor hatten verstehe ich nicht ganz. 
+## Und was Sie mit den hcictools vor hatten verstehe ich nicht ganz.--> ANGEPASST 
 
-#### Zusammenhangshypothese 2: Alter und Umgang mit sozialen Online-Netzwerken ----
+
+### Zusammenhangshypothese 2: Alter und Umgang mit sozialen Online-Netzwerken 
 ## Hypothese: Es besteht ein Zusammenhang zwischen dem Alter und dem Umgang mit sozialen Online-Netzwerken.
 ## H0: Es besteht kein Zusammenhang zwischen dem Alter und dem Umgang mit sozialen Online-Netzwerken.
-## Kendall´s tau Rangkorrelation. UV: Alter, AV: Umgang mit sozialen Online-Netzwerken:
+## Korrelation. UV: Alter, AV: Umgang mit sozialen Online-Netzwerken:
 cor.test(data=df_multi,
          ~age+SON_USE)
 ## Ergebnis: H0 verwerfen.
-## Feedback: Sieht super aus, aber warum kendall? 
+## Feedback: Sieht super aus, aber warum kendall? --> ANGEPASST 
 
-#### Zusammenhangshypothese 3: "Technikverständnis" und "Informationsmanagement" ----
+
+### Zusammenhangshypothese 3: "Technikverständnis" und "Informationsmanagement" 
 ## Hypothese: Ist die digitale Kompetenz “Technikverständnis” stark ausgeprägt, ist auch die digitale Kompetenz “Informationsmanagement” stark ausgeprägt.
 ## H0: Es besteht kein Zusammenhang in der Stärke der Ausprägung der digitalen Kompetenz “Technikverständnis” und der Stärke der Ausprägung der digitalen Kompetenz “Informationsmanagement”.
-## Korrelation. UV: Stärke der Ausprägung "Technikverständnis", AV: Stärke der Ausprägung "Informationsmanagement"
+## Pearson-Korrelation. UV: Stärke der Ausprägung "Technikverständnis", AV: Stärke der Ausprägung "Informationsmanagement"
 cor.test(data=df_multi,          
          ~TECH_VERS+INF_MAN, method= "pearson")
 ## Ergebnis: H0 verwerfen.
 ## Feedback: Hier verwenden Sie z.B. Pearson. Sieht auch super aus!
 
-## Feedback: Die Hausaufgabe war eigentlich auch, die Unterschiedshypothesen hier einzutragen. Falls Sie die Zeilen von 182 bis 194 meinen stimmt da leider gar nichts, weil sie es jeweils so aufgeschrieben haben, als sollten zwei Datensätze (nicht etwas Spalten eines einzelnen Datensatzes) miteinander verglichen werden. 
-
+## Feedback: Die Hausaufgabe war eigentlich auch, die Unterschiedshypothesen hier einzutragen. Falls Sie die Zeilen von 182 bis 194 meinen stimmt da leider gar nichts, weil sie es jeweils so aufgeschrieben haben, als sollten zwei Datensätze (nicht etwas Spalten eines einzelnen Datensatzes) miteinander verglichen werden. --> ANGEPASST
