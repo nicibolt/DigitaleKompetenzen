@@ -200,8 +200,7 @@ saveRDS(data,"data/DigitaleMuendigkeit2.rds")
 ## Hypothese: Es besteht ein Zusammenhang zwischen dem KUT eines Nutzers und dessen digitalen Kompetenzen.
 ## H0: Es besteht kein Zusammenhang zwischen dem KUT eines Nutzers und dessen digitalen Kompetenzen.
 ## Lineare Regression. UV: KUT, AV: digitale Kompetenzen:
-df <- hcictools::TECH_VERS+INF_MAN
-jmv::linReg(df, dep=c("KUT", covs=c("TECH_VERS+INF_MAN"), blocks=list ("KUT"),r2Adj=T, stdEst=T, anova=T))
+jmv::linReg(df, dep=c("KUT"), covs=c("TECH_VERS,INF_MAN"), blocks <- list ("KUT"),r2Adj=T, stdEst=T, anova=T)
 ## Ergebnis: H0 verwerfen.
 ## Feedback: Man versteht, was sie meinen, aber der Code ist syntaktisch nicht ganz korrekt.
 ## Hinter "KUT" muss die Klammer wieder zugehen, bei den covs muss ein Komma statt des Plus und bei Blocks muss ein Vektor übergeben werden.
@@ -212,7 +211,7 @@ jmv::linReg(df, dep=c("KUT", covs=c("TECH_VERS+INF_MAN"), blocks=list ("KUT"),r2
 ## H0: Es besteht kein Zusammenhang zwischen dem Alter und dem Umgang mit sozialen Online-Netzwerken.
 ## Kendall´s tau Rangkorrelation. UV: Alter, AV: Umgang mit sozialen Online-Netzwerken:
 cor.test(data=df_multi,
-         ~age+SON_USE, method= "kendall")
+         ~age+SON_USE)
 ## Ergebnis: H0 verwerfen.
 ## Feedback: Sieht super aus, aber warum kendall? 
 
@@ -221,7 +220,7 @@ cor.test(data=df_multi,
 ## H0: Es besteht kein Zusammenhang in der Stärke der Ausprägung der digitalen Kompetenz “Technikverständnis” und der Stärke der Ausprägung der digitalen Kompetenz “Informationsmanagement”.
 ## Korrelation. UV: Stärke der Ausprägung "Technikverständnis", AV: Stärke der Ausprägung "Informationsmanagement"
 cor.test(data=df_multi,          
-         ~TECH_VERS+INF_MAN)
+         ~TECH_VERS+INF_MAN, method= "pearson")
 ## Ergebnis: H0 verwerfen.
 ## Feedback: Hier verwenden Sie z.B. Pearson. Sieht auch super aus!
 
