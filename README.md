@@ -17,19 +17,19 @@ Welchen Einfluss haben das Alter eines Nutzers einerseits und die KUT des Nutzer
 ### Unterschiedshypothesen 
 
 ## Hypothese 1:
-H1: Es besteht ein Unterschied zwischen dem Alter einer Person und der Ausprägung digitaler Kompetenzen im Umgang mit sozialen Online-Netzwerken.  
-H0: Es besteht kein Unterschied zwischen dem Alter einer Person und der Ausprägung digitaler Kompetenzen im Umgang mit sozialen Netzwerken. 
-(>>one-way Manova, da eine UV und 3 AVs?)
+H1: Es besteht ein Unterschied zwischen jüngeren und älteren Personen und deren digitaler Kompetenzen Technikverständnis und Informationsmanagement.  
+H0: Es besteht kein Unterschied zwischen jüngeren und älteren Personen und deren digitaler Kompetenzen Technikverständnis und Informationsmanagement. 
+(>> one-way Manova, da eine UV und 2 AVs)
 
 ## Hypothese 2: 
-H1: Es macht einen Unterschied in KUT, ob ein Mensch eine hohe Ausprägung digitaler Kompetenzen hat oder nicht. 
-H0: Es macht keinen Unterschied in KUT, ob ein Mensch eine hohe Ausprägung digitaler Kompetenzen hat oder nicht. 
-(>> verbundener T-Test?)
+H1: Menschen die öfter auf soziale Online-Netzwerke zugreifen, haben eine höhere Ausbildung der digitalen Kompetenz Technikverständnis.
+H0: Menschen die öfter auf soziale Online-Netzwerke zugreifen, haben keine höhere Ausbildung der digitalen Kompetenz Technikverständnis.
+(>> unverbundener T-Test)
 
 ## Hypothese 3: 
-1: Es macht einen Unterschied im Umgang mit sozialen Online-Netzwerken, ob ein Mensch eine hohe KUT (4,5-6) hat oder eine niedrige KUT (0-4,4) hat. 
-H0: Es macht keinen Unterschied im Umgang mit sozialen Online-Netzwerken, ob ein Mensch eine hohe KUT (4,5-6) hat oder eine niedrige KUT (0-4,4) hat. 
-(>> two-way Anova, da zwei UVs und eine AV?)
+1: Es liegt ein Unterschied zwischen der digitalen Kompetenz Informationsmanagement und Technikverständnis vor. 
+H0: Es liegt kein Unterschied zwischen der digitalen Kompetenz Informationsmanagement und Technikverständnis vor.  
+(>> verbundener T-Test)
 
 
 
