@@ -1,7 +1,7 @@
 variable;text
 VAR1;Bitte geben Sie Ihr Alter in Jahren (Zahl) an. Open-Ended Response
 VAR2;Bitte geben Sie Ihr Geschlecht an. Response
-VAR3; Response_1 Welchen höchsten Bildungsabschluss haben Sie (bisher) erlangt?
+VAR3;Welchen hÃ¶chsten Bildungsabschluss haben Sie (bisher) erlangt? Response_1
 VAR4;Ich nutze folgendes soziales Online-Netzwerk: Facebook
 VAR5;X17 Instagram
 VAR6;X18 Twitter

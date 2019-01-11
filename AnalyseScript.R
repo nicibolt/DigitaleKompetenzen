@@ -8,7 +8,7 @@ library(lubridate)
 
 # Datei laden ----
 
-filename <- "data/DigitaleMuendigkeit.csv"
+filename <- "data/DigitaleMuendigkeit_final.csv"
 raw <- load_surveymonkey_csv(filename)
 
 
@@ -19,7 +19,7 @@ raw.short <- raw[,c(-1:-9, -13:-15, -36:-38, -46, -49:-53, -68:-69, -77:-136)]
 
 ### Schritt 2: Variablen umbenennen 
 # Codebook mit den Variablennamen zeugen:
-#generate_codebook(raw.short, "codebook.csv")
+generate_codebook(raw.short, "codebook.csv")
 
 
 # Dann codebook.csv in Excel öffnen, die Vairablennamen per Hand umbenennen, 
@@ -169,7 +169,7 @@ print("Hier werden später statistische Analysen durchgeführt. Thema ab dem 16.
 # Graphik erstellung ---- 
 print("Hier werden später Grafiken erstellt. Thema ab dem 16.11.2018")
 
-saveRDS(data,"data/DigitaleMuendigkeit2.rds")
+saveRDS(data,"data/DigitaleMuendigkeit_final.rds")
 
 ####Unterschiedshypothesen: ----
 
@@ -178,7 +178,7 @@ saveRDS(data,"data/DigitaleMuendigkeit2.rds")
 #H0: Es besteht kein Unterschied zwischen jüngeren und älteren Personen in deren digitalen Kompetenzen Technikverständnis und Informationsmanagement. 
 #(>> one-way Manova, da eine UV und 2 AVs)
 
-manova(data, deps= c(“TECH_VERS“ , “INF_MAN“), factors= c(“age“)) 
+manova(data, deps= c(TECH_VERS , INF_MAN), factors= c(age)) 
 #--> Müssen an dieser Stelle zwei Altersgruppen definiert werden? 
 
 ###Unteschiedshypothese 2:
@@ -233,3 +233,4 @@ cor.test(data=df_multi,
 ## Feedback: Hier verwenden Sie z.B. Pearson. Sieht auch super aus!
 
 ## Feedback: Die Hausaufgabe war eigentlich auch, die Unterschiedshypothesen hier einzutragen. Falls Sie die Zeilen von 182 bis 194 meinen stimmt da leider gar nichts, weil sie es jeweils so aufgeschrieben haben, als sollten zwei Datensätze (nicht etwas Spalten eines einzelnen Datensatzes) miteinander verglichen werden. --> ANGEPASST
+
