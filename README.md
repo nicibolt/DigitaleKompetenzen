@@ -82,6 +82,9 @@ __
 
 #### Aktueller Stand ----
 
+### Stand 14.01.2018
+Der neue Datensatz wurde implementiert und die Dummydatensätze (age=99) herausgelöscht.
+
 ### Stand 10.01.2018
 Unterschieds- und Zusammenhangshypothesen wurden angepasst. Entsprechende Tests zur Überprüfung Hypothesen angepasst. Vorschlag zur Verkürzung der Schlüsselliste in AnalyseScript eingefügt.
 

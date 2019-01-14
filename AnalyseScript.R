@@ -15,11 +15,15 @@ raw <- load_surveymonkey_csv(filename)
 #### Daten cleanen ----
 
 ### Schritt 1: Unnötige Spalten löschen.
-raw.short <- raw[,c(-1:-9, -13:-15, -36:-38, -46, -49:-53, -68:-69, -77:-136)] 
+
+raw.short
+
+raw.short <- raw[,c(-1:-9, -13:-15, -36:-38, -46, -49:-53, -68:-69, -77:-136)]
+raw.short.final <- raw.short[,c (age$99)]
 
 ### Schritt 2: Variablen umbenennen 
 # Codebook mit den Variablennamen zeugen:
-generate_codebook(raw.short, "codebook.csv")
+# generate_codebook(raw.short, "codebook.csv")
 
 
 # Dann codebook.csv in Excel öffnen, die Vairablennamen per Hand umbenennen, 
@@ -132,7 +136,7 @@ library(psych)
 
 
 
-schluesselliste <- list(ON_SON= c("on_fb", "on_ig", "on_tw", "on_sc", "on_yt"),
+schluesselliste <- list(ON_SON = c("on_fb", "on_ig", "on_tw", "on_sc", "on_yt"),
                         TECH = c("tech_1", "tech_2", "-tech_3", "tech_4", "tech_5", "-tech_6"),
                         KUT = c("kut_1", "-kut_2", "kut_3", "kut_4", "-kut_5", "kut_6", "-kut_7","-kut_8"),
                         TECH_VERS = c("tvv_1", "tva_1", "tva_2", "tva_3", "tva_4", "tva_5", "tvo_1","tvo_2", "tvo_3", "blog_1"),
