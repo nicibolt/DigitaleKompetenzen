@@ -16,22 +16,23 @@ raw <- load_surveymonkey_csv(filename)
 
 ### Schritt 1: Unnötige Spalten löschen.
 
-raw.short
 
-raw.short <- raw[,c(-1:-9, -13:-15, -36:-38, -46, -49:-53, -68:-69, -77:-136)]
-raw.short.final <- raw.short[,c (age$99)]
+raw.preselect <- raw[,c(-1:-9, -13:-15, -36:-38, -46, -49:-53, -68:-69, -77:-136)]
 
 ### Schritt 2: Variablen umbenennen 
 # Codebook mit den Variablennamen zeugen:
-# generate_codebook(raw.short, "codebook.csv")
+#generate_codebook(raw.preselect, "codebook.csv")
 
 
 # Dann codebook.csv in Excel öffnen, die Vairablennamen per Hand umbenennen, 
-codebook <- read_codebook("codebook_final.csv")
+#codebook <- read_codebook("codebook_final.csv")
 
 #neue Namen auf die Daten anwenden:
-names(raw.short) <- codebook$variable
+#names(raw.preselect) <- codebook$variable
 
+## Herauslöschen der Dummydatensätze (age=99)
+# das ist nur ein Filter: age99 <- dplyr::filter(raw.short, age > 98)
+raw.short <- raw.preselect[raw.preselect$age != 99,]
 
 
 ### Schritt 3: Variablen den richtigen Typen zuordnen
@@ -211,6 +212,7 @@ t.test(data$INF_MAN, data$TECH_VERS, paired= TRUE)
 ## H0: Es besteht kein Zusammenhang zwischen dem KUT eines Nutzers und dessen digitalen Kompetenzen.
 ## Lineare Regression. UV: KUT, AV: digitale Kompetenzen:
 jmv::linReg(df, dep=c("KUT"), covs=c("TECH_VERS,INF_MAN"), blocks <- list ("KUT"),r2Adj=T, stdEst=T, anova=T)
+
 ## Ergebnis: H0 verwerfen.
 ## Feedback: Man versteht, was sie meinen, aber der Code ist syntaktisch nicht ganz korrekt.
 ## Hinter "KUT" muss die Klammer wieder zugehen, bei den covs muss ein Komma statt des Plus und bei Blocks muss ein Vektor übergeben werden.
@@ -223,6 +225,7 @@ jmv::linReg(df, dep=c("KUT"), covs=c("TECH_VERS,INF_MAN"), blocks <- list ("KUT"
 ## Korrelation. UV: Alter, AV: Umgang mit sozialen Online-Netzwerken:
 cor.test(data=df_multi,
          ~age+SON_USE)
+
 ## Ergebnis: H0 verwerfen.
 ## Feedback: Sieht super aus, aber warum kendall? --> ANGEPASST 
 
@@ -233,6 +236,7 @@ cor.test(data=df_multi,
 ## Pearson-Korrelation. UV: Stärke der Ausprägung "Technikverständnis", AV: Stärke der Ausprägung "Informationsmanagement"
 cor.test(data=df_multi,          
          ~TECH_VERS+INF_MAN, method= "pearson")
+
 ## Ergebnis: H0 verwerfen.
 ## Feedback: Hier verwenden Sie z.B. Pearson. Sieht auch super aus!
 
