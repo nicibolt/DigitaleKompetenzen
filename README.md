@@ -12,40 +12,26 @@ tsheesy
 #### Forschungsfrage
 Welchen Einfluss haben das Alter eines Nutzers einerseits und die KUT des Nutzers andererseits auf dessen digitalen Kompetenzen "Technikverständnis" und "Informationsmanagement" im Umgang mit sozialen Online-Netzwerken?
 
-#### Unterschieds- und Nullhypothesen
-
-### Unterschiedshypothesen 
+#### Unterschieds- und Nullhypothesen ----
 
 ## Hypothese 1:
-H1: Es besteht ein Unterschied zwischen dem Alter einer Person und der Ausprägung digitaler Kompetenzen im Umgang mit sozialen Online-Netzwerken.  
-H0: Es besteht kein Unterschied zwischen dem Alter einer Person und der Ausprägung digitaler Kompetenzen im Umgang mit sozialen Netzwerken. 
-(>>one-way Manova, da eine UV und 3 AVs?)
+H1: Es besteht ein Unterschied zwischen jüngeren und älteren Personen in deren digitalen Kompetenzen Technikverständnis und Informationsmanagement.  
+H0: Es besteht kein Unterschied zwischen jüngeren und älteren Personen in deren digitalen Kompetenzen Technikverständnis und Informationsmanagement. 
+(>> one-way Manova, da eine UV und 2 AVs)
 
 ## Hypothese 2: 
-H1: Es besteht ein Unterschied zwischen der KUT und der Ausprägung ihrer digitalen Kompetenz „Technikverständnis“. 
-H0: Es besteht kein Unterschied zwischen der KUT und der Ausprägung ihrer digitalen Kompetenz „Technikverständnis“. 
-(>> one-way Anova, da eine UV und eine AV?)
+H1: "Häufignutzer" von sozialen Online-Netzwerken, haben eine höhere Ausbildung der digitalen Kompetenz Technikverständnis, als "Wenignutzer".
+H0: "Häufignutzer" von sozialen Online-Netzwerken, haben keine höhere Ausbildung der digitalen Kompetenz Technikverständnis, als "Wenignutzer".
+(>> unverbundener T-Test)
 
 ## Hypothese 3: 
-H1: Es besteht ein Unterschied zwischen der KUT und der Ausprägung ihrer digitalen Kompetenz „Informationsmanagement“. 
-H0: Es besteht kein Unterschied zwischen der KUT und der Ausprägung ihrer digitalen Kompetenz „Informationsmanagement“. 
-(>> one-way Anova, da eine UV und eine AV?)
+1: Es liegt ein Unterschied zwischen der digitalen Kompetenz Informationsmanagement und Technikverständnis vor. 
+H0: Es liegt kein Unterschied zwischen der digitalen Kompetenz Informationsmanagement und Technikverständnis vor.  
+(>> verbundener T-Test)
 
-## Hypothese 4: 
-H1: Es macht einen Unterschied in KUT, ob ein Mensch eine hohe Ausprägung digitaler Kompetenzen hat oder nicht. 
-H0: Es macht keinen Unterschied in KUT, ob ein Mensch eine hohe Ausprägung digitaler Kompetenzen hat oder nicht. 
-(>> verbundener T-Test?)
 
-## Hypothese 5:
-H1: Es macht einen Unterschied im Umgang mit sozialen Online-Netzwerken, ob ein Mensch eine hohe KUT (4,5-6) hat oder eine niedrige KUT (0-4,4) hat. 
-H0: Es macht keinen Unterschied im Umgang mit sozialen Online-Netzwerken, ob ein Mensch eine hohe KUT (4,5-6) hat oder eine niedrige KUT (0-4,4) hat. 
-(>> two-way Anova, da zwei UVs und eine AV?)
 
-## Hypothese 6:
-H1: Es macht einen Unterschied im Umgang mit sozialen Online-Netzwerken, ob ein Mensch eine hohe Ausprägung digitaler Kompetenzen (4,5-6) hat oder nicht. 
-H0: Es macht keinen Unterschied im Umgang mit sozialen Online-Netzwerken, ob ein Mensch eine hohe Ausprägung digitaler Kompetenzen (4,5-6) hat oder nicht. 
-
-#### Zusammenhangs- und Nullhypothesen
+#### Zusammenhangs- und Nullhypothesen ----
 
 ## Hypothese 1
 H1: Es besteht ein Zusammenhang zwischen dem KUT eines Nutzers und dessen digitalen Kompetenzen.
@@ -62,12 +48,24 @@ H0:  Es besteht kein Zusammenhang in der Stärke der Ausprägung der digitalen K
 
 #### Vorschlag zur Vereinfachung der Schluesselliste ----
 
-#schluesselliste <- list( ON_SON= c("on_fb", "on_ig", "on_tw", "on_sc", "on_yt", "on_other"),
-                          TECH = c("tech_1", "tech_2", "-tech_3", "tech_4", "tech_5", "-tech_6"),
-                          KUT = c("kut_1", "-kut_2", "kut_3", "kut_4", "-kut_5", "kut_6", "-kut_7","-kut_8"),
-                          TECH_VERS = c("tvv_1", "tva_1", "tva_2", "tva_3", "tva_4", "tva_5", "tvo_1","tvo_2", "tvo_3", "blog_1"),
-                          INF_MAN = c("IMIBpl_1", "IMIBpl_2", "IMIBpl_3", "-IMOSImin_1", "-IMOSImin_2","IMOSIpl_1", "IMIBwertpl_1",                           "IMIBwert_1","-MIBwert_3","MIBwert_4","socialbots_1", "socialbots_2", "blog_2"),
-                          SON_USE = c("son_use_1", "-son_use_2", "-son_use_3", "son_use_4","-son_use_5", "son_use_6", "-son_use_7"))
+### Alte Schlüsselliste:
+
+schluesselliste <- list(ON_SON= c("on_fb", "on_ig", "on_tw", "on_sc", "on_yt", "on_other"),
+                        TECH = c("tech_1", "tech_2", "-tech_3", 
+                                     "tech_4", "tech_5", "-tech_6"),
+                        KUT = c("kut_1", "-kut_2", "kut_3", "kut_4", "-kut_5", "kut_6", "-kut_7", "-kut_8"),
+                        TVV = c("tvv_1"),
+                        TVA = c("tva_1", "tva_2", "tva_3", "tva_4", "tva_5"),
+                        TVO = c("tvo_1", "tvo_2", "tvo_3"),
+                        IMIBPL = c("IMIBpl_1", "IMIBpl_2", "IMIBpl_3"),
+                        IMOSIMIN = c("-IMOSImin_1", "-IMOSImin_2"),
+                        IMOSIPL = c("IMOSIpl_1"),
+                        IMIBWERTPL = c("IMIBwertpl_1"),
+                        IMIBWERT = c("IMIBwert_1"),
+                        MIBWERT = c("-MIBwert_3","MIBwert_4"),
+                        SOCIALBOT = c("socialbots_1","socialbots_2"),
+                        BLOG = c("blog_1","blog_2"),
+                        SON_USE = c("son_use_1", "-son_use_2", "-son_use_3", "son_use_4", "-son_use_5", "son_use_6", "-son_use_7"))
                         
 #BEGRÜNDUNG: „blog_2“  Verfolgung Blog  IMIBschaff: Informationsmanagement – Informationsbeschaffung; "socialbots_1" + "socialbots_2”  Einsatz und Nachrichten von SB  MIBwert: Informationsmanagement – Informatnsbewertung; „blog_1“  Führen eines eigenen blogs  TVA: Technikverständnis – Ausführung
 
@@ -81,6 +79,17 @@ Quellen: A Dirty Dozen: Twelve P-Value Misconceptions – Steven Goodman
 http://www.perfendo.org/docs/BayesProbability/twelvePvaluemisconceptions.pdf
 
 __
+
+#### Aktueller Stand ----
+
+### Stand 10.01.2018
+Unterschieds- und Zusammenhangshypothesen wurden angepasst. Entsprechende Tests zur Überprüfung Hypothesen angepasst. Vorschlag zur Verkürzung der Schlüsselliste in AnalyseScript eingefügt.
+
+ToDo: 
+1. [ERLEDIGT] Häufigkeit der Nutzung von SON muss aus dem DataCleaning rausgenommen werden.--> Habe jetzt stattdessen einen T-Test pro soziales Online-Netzwerk.
+2. Neuer Datensatz muss in R geladen werden.(Neuer Datensatz im Dataordner als DigitaleMuendigkeit_final)
+3. DataCleaning nochmal überprüfen
+4. Hypothesen testen
 
 
 #### Faktorenraum
