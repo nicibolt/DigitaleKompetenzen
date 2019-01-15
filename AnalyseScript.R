@@ -1,9 +1,9 @@
 # Analyse Script
 
 # Bibliotheken laden ----
-library(tidyverse)
+library("tidyverse")
 source("surveymonkey.R")
-library(lubridate)
+library("lubridate")
 
 
 # Datei laden ----
@@ -164,17 +164,16 @@ data <- data %>%
   select(-starts_with("blog_", ignore.case = F)) %>% 
   select(-starts_with("son_use_", ignore.case = F)) 
 
-
+saveRDS(data,"data/DigitaleMuendigkeit_final.rds")
 
 ##### FEEDBACK Datacleaning: Alles super! Den Bildungsstand sollten Sie aber nicht löschen (direkt am Anfang), der ist wichtig für die Stichprobenbeschreibung. ----
 ##### Wenn inhaltlich alles korrekt ist (z.B. die richtigen Items negativ codiert sind) werden Sie im Januar wenig Arbeit haben :-) 
 
 # Analyse ----
-print("Hier werden später statistische Analysen durchgeführt. Thema ab dem 16.11.2018")
+#print("Hier werden später statistische Analysen durchgeführt. Thema ab dem 16.11.2018")
 # Graphik erstellung ---- 
-print("Hier werden später Grafiken erstellt. Thema ab dem 16.11.2018")
+#print("Hier werden später Grafiken erstellt. Thema ab dem 16.11.2018")
 
-saveRDS(data,"data/DigitaleMuendigkeit_final.rds")
 
 ####Unterschiedshypothesen: ----
 
