@@ -25,14 +25,14 @@ raw.preselect <- raw[,c(-1:-9, -13:-15, -36:-38, -46, -49:-53, -68:-69, -77:-136
 
 
 # Dann codebook.csv in Excel öffnen, die Vairablennamen per Hand umbenennen, 
-#codebook <- read_codebook("codebook_final.csv")
+codebook <- read_codebook("codebook_final.csv")
 
 #neue Namen auf die Daten anwenden:
-#names(raw.preselect) <- codebook$variable
+names(raw.preselect) <- codebook$variable
 
 ## Herauslöschen der Dummydatensätze (age=99)
 # das ist nur ein Filter: age99 <- dplyr::filter(raw.short, age > 98)
-raw.short <- raw.preselect[raw.preselect$age != 99,]
+raw.short <- filter(raw.preselect, raw.preselect$age != 99)
 
 
 ### Schritt 3: Variablen den richtigen Typen zuordnen
