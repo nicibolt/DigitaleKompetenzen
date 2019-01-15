@@ -182,7 +182,9 @@ saveRDS(data,"data/DigitaleMuendigkeit_final.rds")
 #H0: Es besteht kein Unterschied zwischen jüngeren und älteren Personen in deren digitalen Kompetenzen Technikverständnis und Informationsmanagement. 
 #(>> one-way Manova, da eine UV und 2 AVs)
 
-manova(data, deps= c(TECH_VERS , INF_MAN), factors= c(age)) 
+library(jmv)
+data <- transform(data, age_group=cut(data$age, breaks=c(-Inf, median(data$age), Inf), labels=c("low", "high")))
+mancova(data, deps= c(TECH_VERS , INF_MAN), factors= c(age_group)) 
 #--> Müssen an dieser Stelle zwei Altersgruppen definiert werden? 
 
 ###Unteschiedshypothese 2:
