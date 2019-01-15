@@ -192,12 +192,9 @@ mancova(data, deps= c(TECH_VERS , INF_MAN), factors= c(age_group))
 #H0: "Häufignutzer" von sozialen Online-Netzwerken, haben keine höhere Ausbildung der digitalen Kompetenz Technikverständnis, als "Wenignutzer".
 #(>> unverbundener T-Test)
 
-t.test( filter(data, on_fb="mehrmals täglich", "täglich")$TECH_VERS, filter(data, on_fb="wöchentlich", "monatlich", "seltener", "nie", "Ich kenne dieses Netzwerk nicht")$TECH_VERS )
-t.test( filter(data, on_ig="mehrmals täglich", "täglich")$TECH_VERS, filter(data, on_ig="wöchentlich", "monatlich", "seltener", "nie", "Ich kenne dieses Netzwerk nicht")$TECH_VERS )
-t.test( filter(data, on_tw="mehrmals täglich", "täglich")$TECH_VERS, filter(data, on_tw="wöchentlich", "monatlich", "seltener", "nie", "Ich kenne dieses Netzwerk nicht")$TECH_VERS )
-t.test( filter(data, on_sc="mehrmals täglich", "täglich")$TECH_VERS, filter(data, on_sc="wöchentlich", "monatlich", "seltener", "nie", "Ich kenne dieses Netzwerk nicht")$TECH_VERS )
-t.test( filter(data, on_yt="mehrmals täglich", "täglich")$TECH_VERS, filter(data, on_yt="wöchentlich", "monatlich", "seltener", "nie", "Ich kenne dieses Netzwerk nicht")$TECH_VERS )
-t.test( filter(data, on_other="mehrmals täglich", "täglich")$TECH_VERS, filter(data, on_other="wöchentlich", "monatlich", "seltener", "nie", "Ich kenne dieses Netzwerk nicht")$TECH_VERS )
+data <- transform(data, ON_SON_group=cut(data$ON_SON, breaks=c(-Inf, median(data$ON_SON), Inf), labels=c("low", "high")))
+t.test(data$ON_SON_group~data$TECH_VERS)
+t.test(data$ON_SON_group~data$INF_MAN)
 
 ##Unterschiedshypothese 3:
 #H1: Es liegt ein Unterschied zwischen der digitalen Kompetenz Informationsmanagement und Technikverständnis vor. 
@@ -212,7 +209,8 @@ t.test(data$INF_MAN, data$TECH_VERS, paired= TRUE)
 ## Hypothese: Es besteht ein Zusammenhang zwischen dem KUT eines Nutzers und dessen digitalen Kompetenzen.
 ## H0: Es besteht kein Zusammenhang zwischen dem KUT eines Nutzers und dessen digitalen Kompetenzen.
 ## Lineare Regression. UV: KUT, AV: digitale Kompetenzen:
-jmv::linReg(df, dep=c("KUT"), covs=c("TECH_VERS,INF_MAN"), blocks <- list ("KUT"),r2Adj=T, stdEst=T, anova=T)
+
+#jmv::linReg(df, dep=c("KUT"), covs=c("TECH_VERS,INF_MAN"), blocks <- list ("KUT"),r2Adj=T, stdEst=T, anova=T)
 
 ## Ergebnis: H0 verwerfen.
 ## Feedback: Man versteht, was sie meinen, aber der Code ist syntaktisch nicht ganz korrekt.
