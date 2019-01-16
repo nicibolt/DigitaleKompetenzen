@@ -172,12 +172,8 @@ saveRDS(data,"data/DigitaleMuendigkeit_final.rds")
 # Analyse ----
 #print("Hier werden später statistische Analysen durchgeführt. Thema ab dem 16.11.2018")
 # Graphik erstellung ---- 
-<<<<<<< HEAD
 
-
-=======
 #print("Hier werden später Grafiken erstellt. Thema ab dem 16.11.2018")
->>>>>>> 962a9a0b9894ee7b193c0dfa543439e4e708fb43
 
 
 ####Unterschiedshypothesen: ----
@@ -198,8 +194,8 @@ mancova(data, deps= c(TECH_VERS , INF_MAN), factors= c(age_group))
 #(>> unverbundener T-Test)
 
 data <- transform(data, ON_SON_group=cut(data$ON_SON, breaks=c(-Inf, median(data$ON_SON), Inf), labels=c("low", "high")))
-t.test(data$ON_SON_group~data$TECH_VERS)
-t.test(data$ON_SON_group~data$INF_MAN)
+t.test(data$TECH_VERS ~ data$ON_SON_group)
+t.test(data$INF_MAN ~ data$ON_SON_group)
 
 ##Unterschiedshypothese 3:
 #H1: Es liegt ein Unterschied zwischen der digitalen Kompetenz Informationsmanagement und Technikverständnis vor. 
