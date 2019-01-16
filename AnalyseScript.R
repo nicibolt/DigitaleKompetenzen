@@ -21,14 +21,14 @@ raw.preselect <- raw[,c(-1:-9, -13:-15, -36:-38, -46, -49:-53, -68:-69, -77:-136
 
 ### Schritt 2: Variablen umbenennen 
 # Codebook mit den Variablennamen zeugen:
-#generate_codebook(raw.preselect, "codebook.csv")
+generate_codebook(raw.preselect, "codebook.csv")
 
 
 # Dann codebook.csv in Excel öffnen, die Vairablennamen per Hand umbenennen, 
-#codebook <- read_codebook("codebook_final.csv")
+codebook <- read_codebook("codebook_final.csv")
 
 #neue Namen auf die Daten anwenden:
-#names(raw.preselect) <- codebook$variable
+names(raw.preselect) <- codebook$variable
 
 ## Herauslöschen der Dummydatensätze (age=99)
 # das ist nur ein Filter: age99 <- dplyr::filter(raw.short, age > 98)
@@ -172,7 +172,8 @@ data <- data %>%
 # Analyse ----
 print("Hier werden später statistische Analysen durchgeführt. Thema ab dem 16.11.2018")
 # Graphik erstellung ---- 
-print("Hier werden später Grafiken erstellt. Thema ab dem 16.11.2018")
+
+
 
 saveRDS(data,"data/DigitaleMuendigkeit_final.rds")
 
