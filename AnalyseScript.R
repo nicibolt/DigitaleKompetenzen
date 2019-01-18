@@ -178,7 +178,7 @@ saveRDS(data,"data/DigitaleMuendigkeit_final.rds")
 
 ####Unterschiedshypothesen: ----
 
-###Unterschiedshypothese 1: 
+###PRÄSI (sig nur für tech_vers) Unterschiedshypothese 1: 
 #H1: Es besteht ein Unterschied zwischen jüngeren und älteren Personen in deren digitalen Kompetenzen Technikverständnis und Informationsmanagement.  
 #H0: Es besteht kein Unterschied zwischen jüngeren und älteren Personen in deren digitalen Kompetenzen Technikverständnis und Informationsmanagement. 
 #(>> one-way Manova, da eine UV und 2 AVs)
@@ -206,12 +206,27 @@ t.test(data$INF_MAN, data$TECH_VERS, paired= TRUE)
 
 ####Zusammenhangshypothesen: ----
 
-### Zusammenhangshypothese 1: KUT und digitale Kompetenzen 
+### PRÄSI sig für eines der Beiden - Zusammenhangshypothese 1: KUT und digitale Kompetenzen 
 ## Hypothese: Es besteht ein Zusammenhang zwischen dem KUT eines Nutzers und dessen digitalen Kompetenzen.
 ## H0: Es besteht kein Zusammenhang zwischen dem KUT eines Nutzers und dessen digitalen Kompetenzen.
 ## Lineare Regression. UV: KUT, AV: digitale Kompetenzen:
 
-#jmv::linReg(df, dep=c("KUT"), covs=c("TECH_VERS,INF_MAN"), blocks <- list ("KUT"),r2Adj=T, stdEst=T, anova=T)
+
+data %>% select(KUT, TECH_VERS, INF_MAN)
+jmv::linReg(data=data, dep=KUT, covs=c("TECH_VERS"),
+            block=list(list("TECH_VERS")),
+          r2Adj=T, stdEst=T, anova=T)
+
+#Korrelation zum Test > TECH_VERS erklärt den selben Anteil der Varianz
+#cor.test(data=data,          
+#        ~KUT+INF_MAN, method= "pearson")
+
+jmv::linReg(data=data, dep=KUT, covs=c("INF_MAN"),
+            block=list(list("INF_MAN")),
+            r2Adj=T, stdEst=T, anova=T)
+
+data$KUT
+
 
 ## Ergebnis: H0 verwerfen.
 ## Feedback: Man versteht, was sie meinen, aber der Code ist syntaktisch nicht ganz korrekt.
@@ -219,7 +234,7 @@ t.test(data$INF_MAN, data$TECH_VERS, paired= TRUE)
 ## Und was Sie mit den hcictools vor hatten verstehe ich nicht ganz.--> ANGEPASST 
 
 
-### Zusammenhangshypothese 2: Alter und Umgang mit sozialen Online-Netzwerken 
+### PRÄSI (nicht sig) Zusammenhangshypothese 2: Alter und Umgang mit sozialen Online-Netzwerken 
 ## Hypothese: Es besteht ein Zusammenhang zwischen dem Alter und dem Umgang mit sozialen Online-Netzwerken.
 ## H0: Es besteht kein Zusammenhang zwischen dem Alter und dem Umgang mit sozialen Online-Netzwerken.
 ## Korrelation. UV: Alter, AV: Umgang mit sozialen Online-Netzwerken:
