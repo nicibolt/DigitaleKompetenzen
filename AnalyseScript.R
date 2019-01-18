@@ -223,7 +223,7 @@ t.test(data$INF_MAN, data$TECH_VERS, paired= TRUE)
 ## Hypothese: Es besteht ein Zusammenhang zwischen dem Alter und dem Umgang mit sozialen Online-Netzwerken.
 ## H0: Es besteht kein Zusammenhang zwischen dem Alter und dem Umgang mit sozialen Online-Netzwerken.
 ## Korrelation. UV: Alter, AV: Umgang mit sozialen Online-Netzwerken:
-cor.test(data=df_multi,
+cor.test(data=data,
          ~age+SON_USE)
 
 ## Ergebnis: H0 verwerfen.
@@ -234,7 +234,7 @@ cor.test(data=df_multi,
 ## Hypothese: Ist die digitale Kompetenz “Technikverständnis” stark ausgeprägt, ist auch die digitale Kompetenz “Informationsmanagement” stark ausgeprägt.
 ## H0: Es besteht kein Zusammenhang in der Stärke der Ausprägung der digitalen Kompetenz “Technikverständnis” und der Stärke der Ausprägung der digitalen Kompetenz “Informationsmanagement”.
 ## Pearson-Korrelation. UV: Stärke der Ausprägung "Technikverständnis", AV: Stärke der Ausprägung "Informationsmanagement"
-cor.test(data=df_multi,          
+cor.test(data=data,          
          ~TECH_VERS+INF_MAN, method= "pearson")
 
 ## Ergebnis: H0 verwerfen.
