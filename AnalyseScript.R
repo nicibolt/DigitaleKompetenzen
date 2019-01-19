@@ -283,11 +283,51 @@ max(data$age)
 boxplot(data$KUT, data$TECH_VERS, data$INF_MAN,
         names=c("KUT","Technikverständnis","Informationsmanagement"),
         col="#0c4c8a",
+        main ="Stichprobenanalyse",
+        ylab = "Likert-Skala [1-6]",
         main ="Stichprobenbeschreibung",
         sub= "Boxplot der unabhängigen Variable KUT sowie der abhängigen Variablen Technikverständnis und Informationsmanagement.",
         ylab = "Angabe auf der Likert-Skala [1-6]"
         )
 
+<<<<<<< HEAD
+=======
+age_low <- subset(data, age_group == "low")
+age_high <- subset(data, age_group == "high")
+
+### Unterschiedshypothese 1
+
+boxplot(age_low$TECH_VERS, age_high$TECH_VERS, age_low$INF_MAN, age_high$INF_MAN,
+        col="#0c4c8a",
+        main = "Unterschied Alter und Digitale Kompetenzen",
+        ylab = "Likert-Skala [1-6]"
+        )
+mtext(text=c("Technikverständnis", "Informationsmanagement", "jung", "alt", "jung", "alt"),
+      side = 1, line = c(1,1,2,2,2,2), at = c(1.5,3.5,1,2,3,4))
+
+library(ggplot2)
+=======
+mean(data$KUT)
+sd(data$KUT)
+median(data$KUT)
+min(data$KUT)     
+max(data$KUT)
+
+mean(data$TECH_VERS)
+sd(data$TECH_VERS)
+median(data$TECH_VERS)
+min(data$TECH_VERS)     
+max(data$TECH_VERS)
+
+mean(data$INF_MAN)
+sd(data$INF_MAN)
+median(data$INF_MAN)
+min(data$INF_MAN)     
+max(data$INF_MAN)
+
+
+>>>>>>> d8f3a47255c1a786929705848c45c6cbff468890
 psych::describe(data)
 
 table(data$gender)
+>>>>>>> 3f5b1b280e47e184a6363f392a3c4ef3726dbeae
