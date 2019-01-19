@@ -282,6 +282,7 @@ max(data$age)
 
 boxplot(data$KUT, data$TECH_VERS, data$INF_MAN,
         names=c("KUT","Technisches Verständnis","Informationsmanagement"),
+        col="#0c4c8a",
         main ="Stichprobenanalyse",
         ylab = "Angabe auf der Likert-Skala [1-6]"
         )
