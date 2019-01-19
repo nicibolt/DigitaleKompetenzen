@@ -288,26 +288,6 @@ boxplot(data$KUT, data$TECH_VERS, data$INF_MAN,
         ylab = "Angabe auf der Likert-Skala [1-6]"
         )
 
-
-mean(data$KUT)
-sd(data$KUT)
-median(data$KUT)
-min(data$KUT)     
-max(data$KUT)
-
-mean(data$TECH_VERS)
-sd(data$TECH_VERS)
-median(data$TECH_VERS)
-min(data$TECH_VERS)     
-max(data$TECH_VERS)
-
-mean(data$INF_MAN)
-sd(data$INF_MAN)
-median(data$INF_MAN)
-min(data$INF_MAN)     
-max(data$INF_MAN)
-
-
 psych::describe(data)
 
 table(data$gender)
