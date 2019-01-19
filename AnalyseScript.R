@@ -32,7 +32,7 @@ names(raw.preselect) <- codebook$variable
 
 ## Herauslöschen der Dummydatensätze (age=99)
 # das ist nur ein Filter: age99 <- dplyr::filter(raw.short, age > 98)
-raw.short <- filter(raw.preselect, raw.preselect$age != 99)
+raw.short <- filter(raw.preselect, raw.preselect$age != 99, raw.preselect$age != 1992)
 
 
 ### Schritt 3: Variablen den richtigen Typen zuordnen
@@ -241,6 +241,7 @@ data$KUT
 cor.test(data=data,
          ~age+SON_USE)
 
+
 ## Ergebnis: H0 verwerfen.
 ## Feedback: Sieht super aus, aber warum kendall? --> ANGEPASST 
 
@@ -256,4 +257,27 @@ cor.test(data=data,
 ## Feedback: Hier verwenden Sie z.B. Pearson. Sieht auch super aus!
 
 ## Feedback: Die Hausaufgabe war eigentlich auch, die Unterschiedshypothesen hier einzutragen. Falls Sie die Zeilen von 182 bis 194 meinen stimmt da leider gar nichts, weil sie es jeweils so aufgeschrieben haben, als sollten zwei Datensätze (nicht etwas Spalten eines einzelnen Datensatzes) miteinander verglichen werden. --> ANGEPASST
+
+
+## Deskriptive Auswertung des bereinigten Datensatzes
+library(ggplot2)
+
+
+raw.short %>% 
+  filter(gender != "keine Angabe") %>% 
+  filter(!is.na(education)) %>% 
+  ggplot() +
+  aes(x = age, fill = education) +
+  geom_histogram(bins = 20) +
+  scale_fill_brewer(palette = "Paired") +
+  labs(title = 'Studentische Stichprobe',
+       x = 'Alter (in Jahren)',
+       y = 'Häufigkeit (absolute)',
+       fill = "Berufsstatus",
+       caption = 'Histogramm mit 20 Bins',
+       subtitle = 'Histogramm des Alters nach Geschlecht und Berufsstatus') +
+  theme_bw() +
+  facet_wrap(vars(gender))
+
+
 
