@@ -281,7 +281,11 @@ min(data$age)
 max(data$age)
 
 
-boxplot(data$TECH_VERS, data$INF_MAN, data$KUT, main ="KUT, TECH VERS, INF MAN", ylab = "Gewicht in kg")
+boxplot(data$KUT, data$TECH_VERS, data$INF_MAN,
+        names=c("KUT","Technisches Verständnis","Informationsmanagement"),
+        main ="Stichprobenanalyse",
+        ylab = "Angabe auf der Likert-Skala [1-6]"
+        )
 
 library(ggplot2)
 
