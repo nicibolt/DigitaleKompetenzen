@@ -283,20 +283,18 @@ max(data$age)
 boxplot(data$KUT, data$TECH_VERS, data$INF_MAN,
         names=c("KUT","Technikverständnis","Informationsmanagement"),
         col="#0c4c8a",
-<<<<<<< HEAD
         main ="Stichprobenanalyse",
-        ylab = "Likert-Skala [1-6]"
-=======
+        ylab = "Likert-Skala [1-6]",
         main ="Stichprobenbeschreibung",
         sub= "Boxplot der unabhängigen Variable KUT sowie der abhängigen Variablen Technikverständnis und Informationsmanagement.",
         ylab = "Angabe auf der Likert-Skala [1-6]"
->>>>>>> 3f5b1b280e47e184a6363f392a3c4ef3726dbeae
         )
 
 age_low <- subset(data, age_group == "low")
 age_high <- subset(data, age_group == "high")
 
-<<<<<<< HEAD
+### Unterschiedshypothese 1
+
 boxplot(age_low$TECH_VERS, age_high$TECH_VERS, age_low$INF_MAN, age_high$INF_MAN,
         col="#0c4c8a",
         main = "Unterschied Alter und Digitale Kompetenzen",
