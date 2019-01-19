@@ -288,11 +288,20 @@ median(data$age)
 min(data$age)     
 max(data$age)
 
+boxplot(data$KUT, data$TECH_VERS, data$INF_MAN,
+        names=c("KUT","Technisches Verständnis","Informationsmanagement"),
+        col="#0c4c8a",
+        main ="Stichprobenanalyse",
+        ylab = "Angabe auf der Likert-Skala [1-6]"
+        )
 
+<<<<<<< HEAD
 boxplot(data$TECH_VERS, data$INF_MAN, data$KUT, 
         main ="KUT, TECH VERS, INF MAN", 
         ylab = "Likertskala",
         xlab = "Technikverständnis - Informationsmanagement - KUT")
+=======
+>>>>>>> 2c59c318037bbd1fc57439311cc43f38d9f92902
 
 library(ggplot2)
 
