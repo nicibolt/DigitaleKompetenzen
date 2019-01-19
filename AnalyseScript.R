@@ -270,7 +270,7 @@ cor.test(data=data,
 ## Deskriptive Auswertung des bereinigten Datensatzes
 library(ggplot2)
 
-ggplot(data = raw.short) +
+ggplot(data = data) +
   aes(x = age) +
   geom_histogram(bins = 30, fill = "#0c4c8a") +
   labs(title = "Studentische Stichprobe",
