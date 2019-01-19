@@ -185,7 +185,8 @@ saveRDS(data,"data/DigitaleMuendigkeit_final.rds")
 
 library(jmv)
 data <- transform(data, age_group=cut(data$age, breaks=c(-Inf, median(data$age), Inf), labels=c("low", "high")))
-mancova(data, deps= c(TECH_VERS , INF_MAN), factors= c(age_group)) 
+mancova(data, deps= c(TECH_VERS , INF_MAN), factors= c(age_group))  
+
 #--> Müssen an dieser Stelle zwei Altersgruppen definiert werden? 
 
 ###Unteschiedshypothese 2:
@@ -218,8 +219,8 @@ jmv::linReg(data=data, dep=KUT, covs=c("TECH_VERS"),
           r2Adj=T, stdEst=T, anova=T)
 
 #Korrelation zum Test > TECH_VERS erklärt den selben Anteil der Varianz
-#cor.test(data=data,          
-#        ~KUT+INF_MAN, method= "pearson")
+cor.test(data=data,          
+        ~KUT+INF_MAN, method= "pearson")
 
 jmv::linReg(data=data, dep=KUT, covs=c("INF_MAN"),
             block=list(list("INF_MAN")),
@@ -240,6 +241,13 @@ data$KUT
 ## Korrelation. UV: Alter, AV: Umgang mit sozialen Online-Netzwerken:
 cor.test(data=data,
          ~age+SON_USE)
+
+#Ergänzende Hypothese (Präsentation)
+## Hypothese: Es besteht ein Zusammenhang zwischen dem KUT und dem Umgang mit sozialen Online-Netzwerken.
+## H0: Es besteht kein Zusammenhang zwischen dem KUT und dem Umgang mit sozialen Online-Netzwerken.
+## Korrelation. UV: KUT, AV: Umgang mit sozialen Online-Netzwerken:
+cor.test(data=data,
+         ~KUT+SON_USE)
 
 
 ## Ergebnis: H0 verwerfen.
@@ -287,10 +295,15 @@ boxplot(data$KUT, data$TECH_VERS, data$INF_MAN,
         ylab = "Angabe auf der Likert-Skala [1-6]"
         )
 
+<<<<<<< HEAD
+boxplot(data$TECH_VERS, data$INF_MAN, data$KUT, 
+        main ="KUT, TECH VERS, INF MAN", 
+        ylab = "Likertskala",
+        xlab = "Technikverständnis - Informationsmanagement - KUT")
+=======
+>>>>>>> 2c59c318037bbd1fc57439311cc43f38d9f92902
 
 library(ggplot2)
-
-
 
 
 
