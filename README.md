@@ -10,7 +10,7 @@ Welchen Einfluss haben das Alter eines Nutzers einerseits und die KUT des Nutzer
 
 ### 2. Faktorenraum
 
-![tooltip](images/DigitaleKompetenzen_FR_präsi.pdf.001.jpeg)
+![tooltip](images/forschungsraum.001.jpeg)
 
 
 ### 3. Hypothesen
