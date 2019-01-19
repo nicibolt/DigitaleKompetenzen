@@ -262,22 +262,24 @@ cor.test(data=data,
 ## Deskriptive Auswertung des bereinigten Datensatzes
 library(ggplot2)
 
+ggplot(data = raw.short) +
+  aes(x = age) +
+  geom_histogram(bins = 30, fill = "#0c4c8a") +
+  labs(title = "Studentische Stichprobe",
+       x = "Alter in Jahren",
+       y = "Häufigkeit (absolut)",
+       caption = "Histogram mit 30 Bins",
+       subtitle = "Histogram des Alters") +
+  theme_gray()
 
-raw.short %>% 
-  filter(gender != "keine Angabe") %>% 
-  filter(!is.na(education)) %>% 
-  ggplot() +
-  aes(x = age, fill = education) +
-  geom_histogram(bins = 20) +
-  scale_fill_brewer(palette = "Paired") +
-  labs(title = 'Studentische Stichprobe',
-       x = 'Alter (in Jahren)',
-       y = 'Häufigkeit (absolute)',
-       fill = "Berufsstatus",
-       caption = 'Histogramm mit 20 Bins',
-       subtitle = 'Histogramm des Alters nach Geschlecht und Berufsstatus') +
-  theme_bw() +
-  facet_wrap(vars(gender))
+ggsave("alter_histogramm.png", width = 7, height = 4)
+
+mean(data$age)
+sd(data$age)
+median(data$age)
+min(data$age)     
+max(data$age)
+
 
 boxplot(data$TECH_VERS, data$INF_MAN, data$KUT, main ="KUT, TECH VERS, INF MAN", ylab = "Gewicht in kg")
 
