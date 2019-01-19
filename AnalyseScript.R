@@ -279,7 +279,10 @@ raw.short %>%
   theme_bw() +
   facet_wrap(vars(gender))
 
-boxplot(data$TECH_VERS, data$INF_MAN, data$KUT, main ="KUT, TECH VERS, INF MAN", ylab = "Gewicht in kg")
+boxplot(data$TECH_VERS, data$INF_MAN, data$KUT, 
+        main ="KUT, TECH VERS, INF MAN", 
+        ylab = "Likertskala",
+        xlab = "Technikverständnis - Informationsmanagement - KUT")
 
 library(ggplot2)
 
