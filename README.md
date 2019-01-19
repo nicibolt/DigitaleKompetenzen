@@ -10,43 +10,31 @@ Welchen Einfluss haben das Alter eines Nutzers einerseits und die KUT des Nutzer
 
 ### 2. Faktorenraum
 
-![tooltip](images/DigitaleKompetenzen_FR_präsi.pdf.001.jpeg)
+![tooltip](images/forschungsraum.001.jpeg)
 
 
 ### 3. Hypothesen
 
-## 3.1 Unterschiedshypothesen ----
+## 3.1 Hypothesen ----
 
 # Hypothese 1:
 H1: Es besteht ein Unterschied zwischen jüngeren und älteren Personen in deren digitalen Kompetenzen Technikverständnis und Informationsmanagement.  
-H0: Es besteht kein Unterschied zwischen jüngeren und älteren Personen in deren digitalen Kompetenzen Technikverständnis und Informationsmanagement. 
 
-# Hypothese 2: 
-H1: "Häufignutzer" sozialer Online-Netzwerke, haben eine höhere Ausbildung der digitalen Kompetenz Technikverständnis, als "Wenignutzer".
-H0: "Häufignutzer" sozialer Online-Netzwerke, haben keine höhere Ausbildung der digitalen Kompetenz Technikverständnis, als "Wenignutzer".
-
-# Hypothese 3: 
-H1: Es liegt ein Unterschied zwischen der digitalen Kompetenz Informationsmanagement und Technikverständnis vor. 
-H0: Es liegt kein Unterschied zwischen der digitalen Kompetenz Informationsmanagement und Technikverständnis vor.  
-
-## 3.2 Zusammenhangshypothesen ----
-
-# Hypothese 1
-H1: Es besteht ein Zusammenhang zwischen dem KUT eines Nutzers und dessen digitalen Kompetenzen.
-H0: Es besteht kein Zusammenhang zwischen dem KUT eines Nutzers und dessen digitalen Kompetenzen.
-
-# Hypothese 2:
-H1:Es besteht ein Zusammenhang zwischen dem Alter und dem Umgang mit sozialen Online-Netzwerken.
-H0: Es besteht kein Zusammenhang zwischen dem Alter und dem Umgang mit sozialen Online-Netzwerken.
+# Hypothese 2
+H2: Es besteht ein Zusammenhang zwischen dem KUT eines Nutzers und dessen digitalen Kompetenzen Technikverständnis und Informationsmangement.
 
 # Hypothese 3:
-H1: Ist die digitale Kompetenz “Technikverständnis” stark ausgeprägt, ist auch die digitale Kompetenz “Informationsmanagement” stark ausgeprägt.
-H0:  Es besteht kein Zusammenhang in der Stärke der Ausprägung der digitalen Kompetenz “Technikverständnis” und der Stärke der Ausprägung der digitalen Kompetenz “Informationsmanagement”.
+H3:Es besteht ein Zusammenhang zwischen dem Alter und dem Umgang mit sozialen Online-Netzwerken.
+
+# Hypothese 4:
+H4:Es besteht ein Zusammenhang zwischen dem KUT und dem Umgang mit sozialen Online-Netzwerken.
+
 
 ### 4. Hinweise zum Umgang mit P-Values
 Der p-Wert wird definiert als: „Die Wahrscheinlichkeit des beobachteten Ergebnisses (inkl. extremerer Ergebnisse), wenn die Nullhypothese stimmt.“ Es wird immer mit der Voraussetzung der Richtigkeit der Nullhypothese gearbeitet. Oftmals wird der p-Wert genau gegenteilig und damit falsch verstanden - nämlich als die Wahrscheinlichkeit, dass die Nullhypothese sich als richtig erweist. Der p-Wert sagt also NICHT aus, wie wahrscheinlich die Nullhypothese ist. Je geringer der p-Wert ist, desto unwahrscheinlicher ist die Richtigkeit der Nullhypothese. Es besteht jedoch ein Zusammenhang zwischen einem kleinen p-Wert und der Alphafehlerwahrscheinlichkeit.
 Als Wahrscheinlichkeitswert kann der p-Wert Werte von 0-1 annehmen. In der Kommunikationswissenschaft liegt der gängige Signifikanzwert bei 5%. Ist der p-Wert kleiner als 5%, wird die Nullhypothese verworfen. Als statistisch signifikant bewertet wird das Ergebnis einer Befragung, sobald die Nullhypothese aufgegeben und die Alternativhypothese angenommen wird. Allerdings sagt ein signifikantes Ergebnis nichts über den tatsächlichen Wahrheitsgehalt einer Hypothese aus. 
 Kritiker dieses Wertes sprechen von willkürlich festgelegten Grenzen, die die Signifikanz einer Umfrage deutlich beeinflussen. Ein weiterer Kritikpunkt: Der p-Wert gibt keine geraden Ergebnisse über die Wahrscheinlichkeit einer Hypothese, sondern nimmt den Exkurs über die Wahrscheinlichkeit der Ergebnisse.
+
 
 ### 5.Dokumentation Forschungsstand ----
 
