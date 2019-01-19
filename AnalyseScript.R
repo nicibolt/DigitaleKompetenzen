@@ -284,14 +284,18 @@ boxplot(data$KUT, data$TECH_VERS, data$INF_MAN,
         names=c("KUT","Technisches Verständnis","Informationsmanagement"),
         col="#0c4c8a",
         main ="Stichprobenanalyse",
-        ylab = "Angabe auf der Likert-Skala [1-6]"
+        ylab = "Likert-Skala [1-6]"
         )
 
+age_low <- subset(data, age_group == "low")
+age_high <- subset(data, age_group == "high")
+
+boxplot(age_low$TECH_VERS, age_high$TECH_VERS, age_low$INF_MAN, age_high$INF_MAN,
+        col="#0c4c8a",
+        main = "Unterschied Alter und Digitale Kompetenzen",
+        ylab = "Likert-Skala [1-6]"
+        )
+mtext(text=c("Technikverständnis", "Informationsmanagement", "jung", "alt", "jung", "alt"),
+      side = 1, line = c(1,1,2,2,2,2), at = c(1.5,3.5,1,2,3,4))
 
 library(ggplot2)
-
-
-
-
-
-
