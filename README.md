@@ -1,8 +1,8 @@
 #### Digitale Kompetenzen
-In diesem Forschungsprojekt sollen Digitale Kompetenzen im Rahmen der Digitalen Mündigkeit untersucht werden.
+In diesem Forschungsprojekt sind Digitale Kompetenzen im Rahmen der Digitalen Mündigkeit untersucht werden.
 
 # Teammitglieder
-Freya Paintner, Nicole Herbolt, Melina Danieli, Pauline Heger, Katharina Wagner
+Melina Danieli, Pauline Heger, Nicole Herbolt, Freya Paintner, Katharina Wagner
 
 
 ### 1. Forschungsfrage
@@ -10,7 +10,7 @@ Welchen Einfluss haben das Alter eines Nutzers einerseits und die KUT des Nutzer
 
 ### 2. Faktorenraum
 
-![tooltip](DigitaleKompetenzen_FR_präsi.pdf.001.jpeg)
+![tooltip](images/DigitaleKompetenzen_FR_präsi.pdf.001.jpeg)
 
 
 ### 3. Hypothesen
@@ -92,3 +92,11 @@ Kritiker dieses Wertes sprechen von willkürlich festgelegten Grenzen, die die S
 
 Quellen: A Dirty Dozen: Twelve P-Value Misconceptions – Steven Goodman
 http://www.perfendo.org/docs/BayesProbability/twelvePvaluemisconceptions.pdf
+
+Ng, W. 2012. Can we teach digital natives digital literacy?. Computer & Education 59(3), 1065-1078. 
+
+van Laar, E. et. al. 2017. The relation between 21st-century skills and digital skills: A systematic literature review. Computers in Human Behavior, 72, 577-588.
+
+Ahmad, M. et. al. 2016. The application of 21st century ict literacy model among teacher trainees. Turkish Online Journal of Educational Technology, 15(3), 151-161. 
+
+Karrer, K, et. al. 2009. Technikaffinität erfassen – der Fragebogen TA-EG. In: A. Lichtenstein, C. Stößel, & C. Clemens (Eds.), Der Mensch im Mittelpunkt technischer Systeme. 8. Berliner Werkstatt Mensch-Maschine-Systeme 7. bis 9. Oktober 2009 (pp.196-201). Düsseldorf, Germany: VDI.
