@@ -2,7 +2,7 @@
 In diesem Forschungsprojekt sollen Digitale Kompetenzen im Rahmen der Digitalen Mündigkeit untersucht werden.
 
 # Teammitglieder
-Freya Painter, Nicole Herbolt, Melina Danieli, Pauline Heger, Katharina Wagner
+Freya Paintner, Nicole Herbolt, Melina Danieli, Pauline Heger, Katharina Wagner
 
 
 ### 1. Forschungsfrage
