@@ -280,13 +280,11 @@ median(data$age)
 min(data$age)     
 max(data$age)
 
-boxplot(data$KUT, data$TECH_VERS, data$INF_MAN,
-        names=c("KUT","Technikverständnis","Informationsmanagement"),
+boxplot(data$KUT, data$TECH_VERS, data$INF_MAN, data$SON_USE,
+        names=c("KUT","Technikverständnis","Informationsmanagement", "Soziale Online-Netzwerke"),
         col="#0c4c8a",
-        main ="Stichprobenanalyse",
         ylab = "Likert-Skala [1-6]",
-        main ="Stichprobenbeschreibung",
-        sub= "Boxplot der unabhängigen Variable KUT sowie der abhängigen Variablen Technikverständnis und Informationsmanagement.",
+        sub= "Boxplot der unabhängigen Variable KUT sowie der abhängigen Variablen Technikverständnis, Informationsmanagement und dem Umgang mit sozialen Online Medien.",
         ylab = "Angabe auf der Likert-Skala [1-6]"
         )
 
