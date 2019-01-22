@@ -1,5 +1,5 @@
 # Digitale Kompetenzen
-In diesem Forschungsprojekt sind Digitale Kompetenzen im Rahmen der Digitalen Mündigkeit untersucht werden.
+In diesem Forschungsprojekt sollen Digitale Kompetenzen im Rahmen der Digitalen Mündigkeit untersucht werden.
 
 ## Teammitglieder
 Melina Danieli, Pauline Heger, Nicole Herbolt, Freya Paintner, Katharina Wagner
@@ -72,13 +72,28 @@ Kritiker dieses Wertes sprechen von willkürlich festgelegten Grenzen, die die S
 
 ### 7. Quellen
 
-Quellen: A Dirty Dozen: Twelve P-Value Misconceptions – Steven Goodman
+Ahmad, M. et. al. 2016. The application of 21st century ict literacy model among teacher trainees. Turkish Online Journal of Educational Technology, 15(3), 151-161. 
+
+Bakó, R., & Tőkés, G. (2017). Strangers in Digiland. Acta Universitatis Sapientiae
+Communicatio, 4(1), 109-115. doi: 10.1515/auscom-2017-0006 
+
+Freiman, V., Godin, J., Larose, F., Léger, M., Chiasson, M., Volkanova, V., Goulet, M.-J.
+(2017). Towards the life-long continuum of digital competences_ exploring combination
+of soft-skills and digital skills development. INTED2017 Proceedings, 9518-9527.
+
+Goodman, S. A Dirty Dozen: Twelve P-Value Misconceptions. Verfügbar unter:
 http://www.perfendo.org/docs/BayesProbability/twelvePvaluemisconceptions.pdf
+
+Janssen, J., Stoyanov, S., Ferrari, A., Punie, Y., Pannekeet, K., & Sloep, P. (2013). Experts'
+views on digital competence: Commonalities and diﬀerences. Computers & Education,
+68, 473-481. doi: 10.1016/j.compedu.2013.06.008
+
+Karrer, K, et. al. 2009. Technikaffinität erfassen – der Fragebogen TA-EG. In: A. Lichtenstein, C. Stößel, & C. Clemens (Eds.), Der Mensch im Mittelpunkt technischer Systeme.8. Berliner Werkstatt Mensch-Maschine-Systeme 7. bis 9. Oktober 2009 (pp.196-201). Düsseldorf, Germany: VDI.
 
 Ng, W. 2012. Can we teach digital natives digital literacy?. Computer & Education 59(3), 1065-1078. 
 
 van Laar, E. et. al. 2017. The relation between 21st-century skills and digital skills: A systematic literature review. Computers in Human Behavior, 72, 577-588.
 
-Ahmad, M. et. al. 2016. The application of 21st century ict literacy model among teacher trainees. Turkish Online Journal of Educational Technology, 15(3), 151-161. 
-
-Karrer, K, et. al. 2009. Technikaffinität erfassen – der Fragebogen TA-EG. In: A. Lichtenstein, C. Stößel, & C. Clemens (Eds.), Der Mensch im Mittelpunkt technischer Systeme. 8. Berliner Werkstatt Mensch-Maschine-Systeme 7. bis 9. Oktober 2009 (pp.196-201). Düsseldorf, Germany: VDI.
+Young, J. (2015). Assessing New Media Literacies in Social Work Education: The
+Development and Validation of a Comprehensive Assessment Instrument. Journal Of
+Technology In Human Services, 33(1), 72-86. doi: 10.1080/15228835.2014.998577 
