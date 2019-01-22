@@ -290,8 +290,8 @@ boxplot(data$KUT, data$TECH_VERS, data$INF_MAN,
         ylab = "Angabe auf der Likert-Skala [1-6]"
         )
 
-<<<<<<< HEAD
-=======
+
+
 age_low <- subset(data, age_group == "low")
 age_high <- subset(data, age_group == "high")
 
@@ -306,7 +306,7 @@ mtext(text=c("Technikverständnis", "Informationsmanagement", "jung", "alt", "ju
       side = 1, line = c(1,1,2,2,2,2), at = c(1.5,3.5,1,2,3,4))
 
 library(ggplot2)
-=======
+
 mean(data$KUT)
 sd(data$KUT)
 median(data$KUT)
@@ -326,8 +326,7 @@ min(data$INF_MAN)
 max(data$INF_MAN)
 
 
->>>>>>> d8f3a47255c1a786929705848c45c6cbff468890
 psych::describe(data)
 
 table(data$gender)
->>>>>>> 3f5b1b280e47e184a6363f392a3c4ef3726dbeae
+
