@@ -297,7 +297,7 @@ age_high <- subset(data, age_group == "high")
 
 boxplot(age_low$TECH_VERS, age_high$TECH_VERS, age_low$INF_MAN, age_high$INF_MAN,
         col="#0c4c8a",
-        main = "Unterschied Alter und Digitale Kompetenzen",
+        main = "Digitale Kompetenzen nach Altersgruppen",
         ylab = "Likert-Skala [1-6]"
         )
 mtext(text=c("Technikverständnis", "Informationsmanagement", "jung", "alt", "jung", "alt"),
