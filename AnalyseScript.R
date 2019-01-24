@@ -325,8 +325,8 @@ ggplot(data, aes(x = KUT, y = TECH_VERS)) +
 ggplot(data, aes(x = KUT, y = INF_MAN)) +
   geom_point() +
   geom_smooth(method = "lm", se = FALSE, size = 0.5) +
-  xlim=c(0,6) +
-  ylim=c(0,6) +
+  xlim(1, 6) +
+  ylim(1, 6) +
   labs(x = "Kontrollüberzeugung im Umgang mit Technik (KUT)", y = "Informationsmanagement",
        title = "Je höher die KUT, desto höher das Informationsmanagement")
 
