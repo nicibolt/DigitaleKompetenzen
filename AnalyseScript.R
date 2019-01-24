@@ -259,6 +259,18 @@ cor.test(data=data,
 ## Feedback: Die Hausaufgabe war eigentlich auch, die Unterschiedshypothesen hier einzutragen. Falls Sie die Zeilen von 182 bis 194 meinen stimmt da leider gar nichts, weil sie es jeweils so aufgeschrieben haben, als sollten zwei Datensätze (nicht etwas Spalten eines einzelnen Datensatzes) miteinander verglichen werden. --> ANGEPASST
 
 
+## Zusammenhangshypothese 4: 
+# H1 Es gibt einen Zusammenhang zwischen der KUT eines Nutzers und seinem Umgang mit Sozialen Online-Netzwerken.
+# H0 Es gibt keinen Zusammenhang zwischen dem KUT eines Nutzers und seinem Umgang mit Sozialen Online-Netzwerken. 
+
+cor.test(data=data,
+         ~KUT+SON_USE)
+
+jmv::linReg(data=data, dep=KUT, covs=c("SON_USE"),
+            block=list(list("SON_USE")),
+            r2Adj=T, stdEst=T, anova=T)
+
+
 ## Deskriptive Auswertung des bereinigten Datensatzes
 library(ggplot2)
 
@@ -303,6 +315,38 @@ boxplot(age_low$TECH_VERS, age_high$TECH_VERS, age_low$INF_MAN, age_high$INF_MAN
 mtext(text=c("Technikverständnis", "Informationsmanagement", "jung", "alt", "jung", "alt"),
       side = 1, line = c(1,1,2,2,2,2), at = c(1.5,3.5,1,2,3,4))
 
+library(ggplot2)
+ggplot(data, aes(x = KUT, y = TECH_VERS)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, size = 0.5) +
+  labs(x = "Kontrollüberzeugung im Umgang mit Technik (KUT)", y = "Technikverständnis",
+       title = "Je höher die KUT, desto höher das Technikverständnis.")
+
+ggplot(data, aes(x = KUT, y = INF_MAN)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, size = 0.5) +
+  xlim=c(0,6) +
+  ylim=c(0,6) +
+  labs(x = "Kontrollüberzeugung im Umgang mit Technik (KUT)", y = "Informationsmanagement",
+       title = "Je höher die KUT, desto höher das Informationsmanagement")
+
+
+library(ggplot2)
+
+ggplot(data = data) +
+  aes(x = age, y = SON_USE) +
+  geom_point(color = 'blue') +
+  theme_grey() +
+  labs(x = "Alter", y = "Umgang mit Sozialen Online-Netzwerken",
+     title = "")
+
+ggplot(data, aes(x = KUT, y = SON_USE)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, size = 0.5) +
+  labs(x = "Kontrollüberzeugung im Umgang mit Technik (KUT)", y = "Umgang mit Sozialen Online-Netzwerken",
+       title = "Je höher die KUT, desto höher der Umgang mit Sozialen Online-Netzwerken")
+
+
 
 
 library(ggplot2)
@@ -329,4 +373,8 @@ max(data$INF_MAN)
 psych::describe(data)
 
 table(data$gender)
+
+## test
+
+library(plotrix)
 
