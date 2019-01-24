@@ -349,8 +349,9 @@ ggplot(data = data) +
   theme_grey() +
   xlim(15, 75) +
   ylim(1, 6) +
-  labs(x = "Alter in Jahren", y = "Umgang mit ozialen Online-Netzwerken",
-     title = "Kaum ein Zusammenhang zwischen Alter und dem Umgang mit sozialen Online-Netzwerken",
+  labs(x = "Alter in Jahren", y = "Umgang mit sozialen Online-Netzwerken",
+     title = expression(atop("Kaum Zusammenhang zwischen Alter und dem",
+                             paste("Umgang mit sozialen Online-Netzwerken"))),
      subtitle = "Punktdiagramm")
 
 ggsave("alter_SON.png", width = 6, height = 4)
@@ -361,7 +362,8 @@ ggplot(data, aes(x = KUT, y = SON_USE)) +
   ylim(1, 6) +
   geom_smooth(method = "lm", se = FALSE, size = 0.5) +
   labs(x = "Kontrollüberzeugung im Umgang mit Technik (KUT)", y = "Umgang mit sozialen Online-Netzwerken",
-       title = "Je höher die KUT, desto sicherer der Umgang mit Sozialen Online-Netzwerken",
+       title = expression(atop("Je höher die KUT, desto sicherer der Umgang",
+                               paste("mit sozialen Online-Netzwerken"))),
        subtitle = "Lineare Regression")
 
 ggsave("KUT_SON.png", width = 6, height = 4)
