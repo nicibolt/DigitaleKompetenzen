@@ -284,7 +284,22 @@ ggplot(data = data) +
        subtitle = "Histogramm des Alters") +
   theme_gray()
 
-ggsave("alter_histogramm.png", width = 7, height = 4)
+#ggsave("alter_histogramm.png", width = 7, height = 4)
+library(ggplot2)
+
+#Histogramm Bildungsabschluss
+forcats::fct_infreq
+require(forcats)
+
+ggplot(data, aes(fct_infreq(education))) + 
+  geom_bar(fill = "#0c4c8a") +
+  labs(x = "Bildungsabschlüsse",
+    y = "Häufigkeit (absolut)",
+    caption = "Histogramm mit 30 Bins",
+    subtitle = "Balkendiagramm der Bildungsabschlüsse (n=536)") +
+  theme_gray() +
+  coord_flip()
+
 
 mean(data$age)
 sd(data$age)
@@ -326,7 +341,7 @@ ggplot(data, aes(x = KUT, y = TECH_VERS)) +
        title = "Je höher die KUT, desto höher das Technikverständnis",
        subtitle = "Lineare Regression")
 
-ggsave("KUT_TECH.png", width = 6, height = 4)
+#ggsave("KUT_TECH.png", width = 6, height = 4)
 
 ggplot(data, aes(x = KUT, y = INF_MAN)) +
   geom_point() +
@@ -338,7 +353,7 @@ ggplot(data, aes(x = KUT, y = INF_MAN)) +
        title = "Je höher die KUT, desto höher das Informationsmanagement",
        subtitle = "Lineare Regression")
 
-ggsave("KUT_INF.png", width = 6, height = 4)
+#ggsave("KUT_INF.png", width = 6, height = 4)
 
 
 library(ggplot2)
@@ -354,7 +369,7 @@ ggplot(data = data) +
                              paste("Umgang mit sozialen Online-Netzwerken"))),
      subtitle = "Punktdiagramm")
 
-ggsave("alter_SON.png", width = 6, height = 4)
+#ggsave("alter_SON.png", width = 6, height = 4)
 
 ggplot(data, aes(x = KUT, y = SON_USE)) +
   geom_point() +
@@ -366,7 +381,7 @@ ggplot(data, aes(x = KUT, y = SON_USE)) +
                                paste("mit sozialen Online-Netzwerken"))),
        subtitle = "Lineare Regression")
 
-ggsave("KUT_SON.png", width = 6, height = 4)
+#ggsave("KUT_SON.png", width = 6, height = 4)
 
 
 
