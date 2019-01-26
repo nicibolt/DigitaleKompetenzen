@@ -280,8 +280,8 @@ ggplot(data = data) +
   labs(title = "Studentische Stichprobe",
        x = "Alter in Jahren",
        y = "Häufigkeit (absolut)",
-       caption = "Histogram mit 30 Bins",
-       subtitle = "Histogram des Alters") +
+       caption = "Histogramm mit 30 Bins",
+       subtitle = "Histogramm des Alters") +
   theme_gray()
 
 ggsave("alter_histogramm.png", width = 7, height = 4)
