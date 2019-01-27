@@ -22,10 +22,10 @@ H1: Es besteht ein Unterschied zwischen jüngeren und älteren Personen in deren
 H2: Es besteht ein Zusammenhang zwischen dem KUT eines Nutzers und dessen digitalen Kompetenzen Technikverständnis und Informationsmangement.
 
 ### Hypothese 3:
-H3:Es besteht ein Zusammenhang zwischen dem Alter und dem Umgang mit sozialen Online-Netzwerken.
+H3:Es besteht ein Zusammenhang zwischen dem Alter und der Nutzung von sozialen Online-Netzwerken.
 
 ### Hypothese 4:
-H4:Es besteht ein Zusammenhang zwischen dem KUT und dem Umgang mit sozialen Online-Netzwerken.
+H4:Es besteht ein Zusammenhang zwischen dem KUT und der Nutzung von sozialen Online-Netzwerken.
 
 
 ## 4. Hinweise zum Umgang mit P-Values
@@ -35,6 +35,9 @@ Kritiker dieses Wertes sprechen von willkürlich festgelegten Grenzen, die die S
 
 
 ## 5.Dokumentation Forschungsstand ----
+
+### Stand 20.01.2018
+*Ein neuer, grafisch aufbereiteter Forschungsraum wurde hochgeladen.
 
 ### Stand 14.01.2018
 *Der neue Datensatz wurde implementiert und die Dummydatensätze (age=99) herausgelöscht.
@@ -90,7 +93,7 @@ views on digital competence: Commonalities and diﬀerences. Computers & Educati
 
 Karrer, K, et. al. 2009. Technikaffinität erfassen – der Fragebogen TA-EG. In: A. Lichtenstein, C. Stößel, & C. Clemens (Eds.), Der Mensch im Mittelpunkt technischer Systeme.8. Berliner Werkstatt Mensch-Maschine-Systeme 7. bis 9. Oktober 2009 (pp.196-201). Düsseldorf, Germany: VDI.
 
-Ng, W. 2012. Can we teach digital natives digital literacy?. Computer & Education 59(3), 1065-1078. 
+Ng, W. 2012. Can we teach digital natives digital literacy?. Computer & Education 59(3), 1065-1078.
 
 van Laar, E. et. al. 2017. The relation between 21st-century skills and digital skills: A systematic literature review. Computers in Human Behavior, 72, 577-588.
 
