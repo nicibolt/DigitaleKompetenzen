@@ -280,11 +280,26 @@ ggplot(data = data) +
   labs(title = "Studentische Stichprobe",
        x = "Alter in Jahren",
        y = "Häufigkeit (absolut)",
-       caption = "Histogram mit 30 Bins",
-       subtitle = "Histogram des Alters") +
+       caption = "Histogramm mit 30 Bins",
+       subtitle = "Histogramm des Alters") +
   theme_gray()
 
-ggsave("alter_histogramm.png", width = 7, height = 4)
+#ggsave("alter_histogramm.png", width = 7, height = 4)
+library(ggplot2)
+
+#Histogramm Bildungsabschluss
+forcats::fct_infreq
+require(forcats)
+
+ggplot(data, aes(fct_infreq(education))) + 
+  geom_bar(fill = "#0c4c8a") +
+  labs(x = "Bildungsabschlüsse",
+    y = "Häufigkeit (absolut)",
+    caption = "Histogramm mit 30 Bins",
+    subtitle = "Balkendiagramm der Bildungsabschlüsse (n=536)") +
+  theme_gray() +
+  coord_flip()
+
 
 mean(data$age)
 sd(data$age)
@@ -319,16 +334,26 @@ library(ggplot2)
 ggplot(data, aes(x = KUT, y = TECH_VERS)) +
   geom_point() +
   geom_smooth(method = "lm", se = FALSE, size = 0.5) +
-  labs(x = "Kontrollüberzeugung im Umgang mit Technik (KUT)", y = "Technikverständnis",
-       title = "Je höher die KUT, desto höher das Technikverständnis.")
+  xlim(1, 6) +
+  ylim(1, 6) +
+  labs(x = "Kontrollüberzeugung im Umgang mit Technik (KUT)",
+       y = "Technikverständnis",
+       title = "Je höher die KUT, desto höher das Technikverständnis",
+       subtitle = "Lineare Regression")
+
+#ggsave("KUT_TECH.png", width = 6, height = 4)
 
 ggplot(data, aes(x = KUT, y = INF_MAN)) +
   geom_point() +
   geom_smooth(method = "lm", se = FALSE, size = 0.5) +
-  xlim=c(0,6) +
-  ylim=c(0,6) +
-  labs(x = "Kontrollüberzeugung im Umgang mit Technik (KUT)", y = "Informationsmanagement",
-       title = "Je höher die KUT, desto höher das Informationsmanagement")
+  xlim(1, 6) +
+  ylim(1, 6) +
+  labs(x = "Kontrollüberzeugung im Umgang mit Technik (KUT)",
+       y = "Informationsmanagement",
+       title = "Je höher die KUT, desto höher das Informationsmanagement",
+       subtitle = "Lineare Regression")
+
+#ggsave("KUT_INF.png", width = 6, height = 4)
 
 
 library(ggplot2)
@@ -337,14 +362,26 @@ ggplot(data = data) +
   aes(x = age, y = SON_USE) +
   geom_point(color = 'blue') +
   theme_grey() +
-  labs(x = "Alter", y = "Umgang mit Sozialen Online-Netzwerken",
-     title = "")
+  xlim(15, 75) +
+  ylim(1, 6) +
+  labs(x = "Alter in Jahren", y = "Umgang mit sozialen Online-Netzwerken",
+     title = expression(atop("Kaum Zusammenhang zwischen Alter und dem",
+                             paste("Umgang mit sozialen Online-Netzwerken"))),
+     subtitle = "Punktdiagramm")
+
+#ggsave("alter_SON.png", width = 6, height = 4)
 
 ggplot(data, aes(x = KUT, y = SON_USE)) +
   geom_point() +
+  xlim(1, 6) +
+  ylim(1, 6) +
   geom_smooth(method = "lm", se = FALSE, size = 0.5) +
-  labs(x = "Kontrollüberzeugung im Umgang mit Technik (KUT)", y = "Umgang mit Sozialen Online-Netzwerken",
-       title = "Je höher die KUT, desto höher der Umgang mit Sozialen Online-Netzwerken")
+  labs(x = "Kontrollüberzeugung im Umgang mit Technik (KUT)", y = "Umgang mit sozialen Online-Netzwerken",
+       title = expression(atop("Je höher die KUT, desto sicherer der Umgang",
+                               paste("mit sozialen Online-Netzwerken"))),
+       subtitle = "Lineare Regression")
+
+#ggsave("KUT_SON.png", width = 6, height = 4)
 
 
 
