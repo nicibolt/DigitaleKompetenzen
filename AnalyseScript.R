@@ -134,7 +134,7 @@ raw.short$son_use_7 <- ordered(raw.short$son_use_7, levels = scale.zustimmung2)
 
 # Skalenberechnung ----
 
-library(psych)bind
+library(psych)
 
 schluesselliste <- list(ON_SON = c("on_fb", "on_ig", "on_tw", "on_sc", "on_yt"),
                         TECH = c("tech_1", "tech_2", "-tech_3", "tech_4", "tech_5", "-tech_6"),
@@ -225,8 +225,17 @@ t.test(data$INF_MAN, data$TECH_VERS, paired= TRUE)
 ### PRÄSI sig für eines der Beiden - Zusammenhangshypothese 1: KUT und digitale Kompetenzen 
 ## Hypothese: Es besteht ein Zusammenhang zwischen dem KUT eines Nutzers und dessen digitalen Kompetenzen.
 ## H0: Es besteht kein Zusammenhang zwischen dem KUT eines Nutzers und dessen digitalen Kompetenzen.
-## Lineare Regression. UV: KUT, AV: digitale Kompetenzen:
+## Lineare Regression. UV: KUT, AV: digitale Kompetenzen
 
+jmv::corrMatrix(data, vars = c("KUT", "TECH_VERS", "INF_MAN"),
+                pearson = TRUE,
+                spearman = TRUE,
+                kendall = TRUE,
+                sig = TRUE,
+                flag = TRUE,
+                ci = FALSE,
+                ciWidth = 50,
+                plots = TRUE)
 
 data %>% select(KUT, TECH_VERS, INF_MAN)
 jmv::linReg(data=data, dep=KUT, covs=c("TECH_VERS", "INF_MAN"),
@@ -244,8 +253,6 @@ jmv::linReg(data=data, dep=KUT, covs=c("TECH_VERS"),
 jmv::linReg(data=data, dep=KUT, covs=c("INF_MAN"),
             block=list(list("INF_MAN")),
             r2Adj=T, stdEst=T, anova=T)
-
-data$KUT
 
 plot(data$KUT, data$TECH_VERS, 
      pch = 16, cex = 1, col = "blue", 
@@ -443,16 +450,32 @@ table(data$gender)
 
 ## test
 
-library(plotrix)
+library
 
-jmv::corrMatrix(data, vars = c("KUT", "TECH_VERS", "INF_MAN"),
-                pearson = TRUE,
-                spearman = TRUE,
-                kendall = TRUE,
-                sig = TRUE,
-                flag = TRUE,
-                ci = FALSE,
-                ciWidth = 50,
-                plots = TRUE)
+library(ggplot2)
+
+data <- transform(data, INFMAN_group=cut(data$INF_MAN, breaks=c(-Inf, median(data$INF_MAN), Inf), labels=c("low", "high")))
 
 
+data %>%
+  group_by(age_group, INFMAN_group) %>%
+  summarise(mean_TECH_VERS = mean(data$TECH_VERS), sem_TECH_VERS = std.error(data$TECH_VERS)) %>%
+  ggplot() +
+  aes(x = INFMAN_group, y = mean_TECH_VERS, colour = age_group,
+      ymin = mean_TECH_VERS - sem_TECH_VERS,
+      ymax = mean_TECH_VERS + sem_TECH_VERS) +
+  scale_colour_manual(values = c("#27AE60", "#E67E22")) +
+  geom_errorbar(width = 0.2, colour = "#322D2C") +
+  geom_point(size = 3) +
+  geom_line(aes(group = age_group)) +
+  ylim(2,6) +
+  labs(title = 'Unterschied gruppiert nach Geschlecht',
+    x = 'INF MAN high low',
+    y = 'Label',
+    colour = "AGE group",
+    caption = 'caption',
+    subtitle = 'subtitel') +
+  theme_minimal() +
+NULL
+
+data$INFMAN_group
