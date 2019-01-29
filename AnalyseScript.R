@@ -143,11 +143,9 @@ schluesselliste <- list(ON_SON = c("on_fb", "on_ig", "on_tw", "on_sc", "on_yt"),
                         INF_MAN = c("IMIBpl_1", "IMIBpl_2", "IMIBpl_3", "-IMOSImin_1", "-IMOSImin_2","IMOSIpl_1", "IMIBwertpl_1", "IMIBwert_1","-MIBwert_3","MIBwert_4","socialbots_1", "socialbots_2", "blog_2"),
                         SON_USE = c("-son_use_1", "son_use_2", "-son_use_3", "son_use_4","-son_use_5", "son_use_6", "-son_use_7"))
 
-scores <- scoreItems(schluesselliste, raw.short, missing = TRUE, min = 1, max = 6)
+scoreItems(schluesselliste, raw.short, missing = TRUE, min = 1, max = 6)
 
-#Try Crombach Apha, Freya
-#ON_SON_df <- data.frame(raw.short$on_fb, raw.short$on_ig, raw.short$on_tw, raw.short$on_sc, raw.short$on_yt)
-#alpha(ON_SON_df, keys = NULL)
+scores <- scoreItems(schluesselliste, raw.short, missing = TRUE, min = 1, max = 6)
 
 data <- bind_cols(raw.short, as.tibble(scores$scores))
 data <- data %>% 
@@ -410,7 +408,8 @@ ggplot(data, aes(x = KUT, y = SON_USE)) +
   xlim(1, 6) +
   ylim(1, 6) +
   geom_smooth(method = "lm", se = FALSE, size = 0.5) +
-  labs(x = "Kontrollüberzeugung im Umgang mit Technik (KUT)", y = "Umgang mit sozialen Online-Netzwerken",
+  labs(x = "Kontrollüberzeugung im Umgang mit Technik (KUT)", 
+       y = "Umgang mit sozialen Online-Netzwerken",
        title = expression(atop("Je höher die KUT, desto sicherer der Umgang",
                                paste("mit sozialen Online-Netzwerken"))),
        subtitle = "Lineare Regression")
@@ -448,16 +447,12 @@ psych::describe(data)
 
 table(data$gender)
 
-## test
 
-<<<<<<< HEAD
-library
+## test
 
 library(ggplot2)
 
 data <- transform(data, INFMAN_group=cut(data$INF_MAN, breaks=c(-Inf, median(data$INF_MAN), Inf), labels=c("low", "high")))
-
-
 data %>%
   group_by(age_group, INFMAN_group) %>%
   summarise(mean_TECH_VERS = mean(data$TECH_VERS), sem_TECH_VERS = std.error(data$TECH_VERS)) %>%
@@ -479,6 +474,28 @@ data %>%
   theme_minimal() +
 NULL
 
+data <- transform(data, TECHVERS_group=cut(data$TECH_VERS, breaks=c(-Inf, median(data$TECH_VERS), Inf), labels=c("low", "high")))
+data %>%
+  group_by(age_group, TECHVERS_group) %>%
+  summarise(mean_INF_MAN = mean(data$INF_MAN), sem_INF_MAN = std.error(data$INF_MAN)) %>%
+  ggplot() +
+  aes(x = TECHVERS_group, y = data$INF_MAN, colour = age_group,
+      ymin = mean_INF_MAN - sem_INF_MAN,
+      ymax = mean_INF_MAN + sem_INF_MAN) +
+  scale_colour_manual(values = c("#27AE60", "#E67E22")) +
+  geom_errorbar(width = 0.2, colour = "#322D2C") +
+  geom_point(size = 3) +
+  geom_line(aes(group = age_group)) +
+  ylim(2,6) +
+  labs(title = 'Unterschied gruppiert nach Geschlecht',
+       x = 'INF MAN high low',
+       y = 'Label',
+       colour = "AGE group",
+       caption = 'caption',
+       subtitle = 'subtitel') +
+  theme_minimal() +
+  NULL
+
 data$INFMAN_group
 =======
 library(plotrix)
@@ -489,7 +506,37 @@ jmv::corrMatrix(data, vars = c("KUT", "TECH_VERS", "INF_MAN"),
                 kendall = TRUE,
                 sig = TRUE,
                 flag = TRUE,
-                ci = FALSE,
                 ciWidth = 50,
                 plots = TRUE)
->>>>>>> 9bde5585decfe84e4ace6cc4baf52da83434332a
+
+jmv::corrMatrix(data, vars = c("age", "KUT", "SON_USE"),
+                pearson = TRUE,
+                spearman = TRUE,
+                kendall = TRUE,
+                sig = TRUE,
+                flag = TRUE,
+                ciWidth = 50,
+                plots = TRUE)
+
+library(ggplot2)
+
+ggplot(data = data) +
+  aes(x = age, y = ON_SON) +
+  geom_point(color = '#0c4c8a') +
+  ylim(1,6) +
+  labs(title = 'Zusammenhang Alter und deren Nutzung von SON.',
+    x = 'Alter in Jahren',
+    y = 'Nutzung sozialer Online-Netzwerke [1-6]',
+    subtitle = 'Punktdiagramm') +
+  theme_minimal()
+
+ggplot(data = data) +
+  aes(x = KUT, y = ON_SON) +
+  geom_point(color = '#0c4c8a') +
+  xlim(1,6) +
+  ylim(1,6) +
+  labs(title = 'Zusammenhang KUT und Nutzung von SON.',
+       x = 'Kontrollüberzeugung im Umgang mit Technik [1-6]',
+       y = 'Nutzung sozialer Online-Netzwerke [1-6]',
+       subtitle = 'Punktdiagramm') +
+  theme_minimal()
