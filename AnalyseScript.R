@@ -134,14 +134,14 @@ raw.short$son_use_7 <- ordered(raw.short$son_use_7, levels = scale.zustimmung2)
 
 # Skalenberechnung ----
 
-library(psych)bind
+library(psych)
 
 schluesselliste <- list(ON_SON = c("on_fb", "on_ig", "on_tw", "on_sc", "on_yt"),
                         TECH = c("tech_1", "tech_2", "-tech_3", "tech_4", "tech_5", "-tech_6"),
                         KUT = c("kut_1", "-kut_2", "kut_3", "kut_4", "-kut_5", "kut_6", "-kut_7","-kut_8"),
                         TECH_VERS = c("tvv_1", "tva_1", "tva_2", "tva_3", "tva_4", "tva_5", "tvo_1","tvo_2", "tvo_3", "blog_1"),
                         INF_MAN = c("IMIBpl_1", "IMIBpl_2", "IMIBpl_3", "-IMOSImin_1", "-IMOSImin_2","IMOSIpl_1", "IMIBwertpl_1", "IMIBwert_1","-MIBwert_3","MIBwert_4","socialbots_1", "socialbots_2", "blog_2"),
-                        SON_USE = c("son_use_1", "-son_use_2", "-son_use_3", "son_use_4","-son_use_5", "son_use_6", "-son_use_7"))
+                        SON_USE = c("-son_use_1", "son_use_2", "-son_use_3", "son_use_4","-son_use_5", "son_use_6", "-son_use_7"))
 
 scores <- scoreItems(schluesselliste, raw.short, missing = TRUE, min = 1, max = 6)
 
@@ -454,5 +454,3 @@ jmv::corrMatrix(data, vars = c("KUT", "TECH_VERS", "INF_MAN"),
                 ci = FALSE,
                 ciWidth = 50,
                 plots = TRUE)
-
-
