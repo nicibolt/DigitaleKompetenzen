@@ -136,6 +136,8 @@ raw.short$son_use_7 <- ordered(raw.short$son_use_7, levels = scale.zustimmung2)
 
 library(psych)
 
+ON_SON <- list(ON_SON = c("on_fb", "on_ig", "on_tw", "on_sc", "on_yt"))
+
 schluesselliste <- list(ON_SON = c("on_fb", "on_ig", "on_tw", "on_sc", "on_yt"),
                         TECH = c("tech_1", "tech_2", "-tech_3", "tech_4", "tech_5", "-tech_6"),
                         KUT = c("kut_1", "-kut_2", "kut_3", "kut_4", "-kut_5", "kut_6", "-kut_7","-kut_8"),
@@ -144,6 +146,7 @@ schluesselliste <- list(ON_SON = c("on_fb", "on_ig", "on_tw", "on_sc", "on_yt"),
                         SON_USE = c("-son_use_1", "son_use_2", "-son_use_3", "son_use_4","-son_use_5", "son_use_6", "-son_use_7"))
 
 scoreItems(schluesselliste, raw.short, missing = TRUE, min = 1, max = 6)
+scoreItems(ON_SON, raw.short, missing = TRUE, min = 1, max = 6)
 
 scores <- scoreItems(schluesselliste, raw.short, missing = TRUE, min = 1, max = 6)
 
