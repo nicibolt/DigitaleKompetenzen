@@ -176,6 +176,9 @@ saveRDS(data,"data/DigitaleMuendigkeit_final.rds")
 #print("Hier werden später Grafiken erstellt. Thema ab dem 16.11.2018")
 
 
+
+
+
 ####Unterschiedshypothesen: ----
 
 ###PRÄSI (sig nur für tech_vers) Unterschiedshypothese 1: 
@@ -186,6 +189,12 @@ saveRDS(data,"data/DigitaleMuendigkeit_final.rds")
 library(jmv)
 data <- transform(data, age_group=cut(data$age, breaks=c(-Inf, median(data$age), Inf), labels=c("low", "high")))
 mancova(data, deps= c(TECH_VERS , INF_MAN), factors= c(age_group)) 
+
+t.test(data$age_group, data$TECH_VERS, paired= TRUE)
+t.test(data$age, data$INF_MAN, paired= TRUE)
+
+
+
 #--> Müssen an dieser Stelle zwei Altersgruppen definiert werden? 
 
 ###Unteschiedshypothese 2:
@@ -204,6 +213,10 @@ t.test(data$INF_MAN ~ data$ON_SON_group)
 
 t.test(data$INF_MAN, data$TECH_VERS, paired= TRUE)
 
+
+
+
+
 ####Zusammenhangshypothesen: ----
 
 ### PRÄSI sig für eines der Beiden - Zusammenhangshypothese 1: KUT und digitale Kompetenzen 
@@ -213,13 +226,17 @@ t.test(data$INF_MAN, data$TECH_VERS, paired= TRUE)
 
 
 data %>% select(KUT, TECH_VERS, INF_MAN)
-jmv::linReg(data=data, dep=KUT, covs=c("TECH_VERS"),
-            block=list(list("TECH_VERS")),
+jmv::linReg(data=data, dep=KUT, covs=c("TECH_VERS", "INF_MAN"),
+            block=list(list("TECH_VERS", "INF_MAN")),
           r2Adj=T, stdEst=T, anova=T)
 
 #Korrelation zum Test > TECH_VERS erklärt den selben Anteil der Varianz
 #cor.test(data=data,          
 #        ~KUT+INF_MAN, method= "pearson")
+
+jmv::linReg(data=data, dep=KUT, covs=c("TECH_VERS"),
+            block=list(list("TECH_VERS")),
+            r2Adj=T, stdEst=T, anova=T)
 
 jmv::linReg(data=data, dep=KUT, covs=c("INF_MAN"),
             block=list(list("INF_MAN")),
@@ -227,11 +244,22 @@ jmv::linReg(data=data, dep=KUT, covs=c("INF_MAN"),
 
 data$KUT
 
+plot(data$KUT, data$TECH_VERS, 
+     pch = 16, cex = 1, col = "blue", 
+     main = "Lineare Regression KUT-TECH", 
+     xlab = "KUT (1-6)", 
+     ylab = "TECH (1-6)",
+     abline(lm(data$KUT ~ data$TECH_VERS)))
+
+
 
 ## Ergebnis: H0 verwerfen.
 ## Feedback: Man versteht, was sie meinen, aber der Code ist syntaktisch nicht ganz korrekt.
 ## Hinter "KUT" muss die Klammer wieder zugehen, bei den covs muss ein Komma statt des Plus und bei Blocks muss ein Vektor übergeben werden.
 ## Und was Sie mit den hcictools vor hatten verstehe ich nicht ganz.--> ANGEPASST 
+
+
+
 
 
 ### PRÄSI (nicht sig) Zusammenhangshypothese 2: Alter und Umgang mit sozialen Online-Netzwerken 
@@ -265,10 +293,6 @@ cor.test(data=data,
 
 cor.test(data=data,
          ~KUT+SON_USE)
-
-jmv::linReg(data=data, dep=KUT, covs=c("SON_USE"),
-            block=list(list("SON_USE")),
-            r2Adj=T, stdEst=T, anova=T)
 
 
 ## Deskriptive Auswertung des bereinigten Datensatzes
@@ -381,6 +405,9 @@ ggplot(data, aes(x = KUT, y = SON_USE)) +
                                paste("mit sozialen Online-Netzwerken"))),
        subtitle = "Lineare Regression")
 
+
+
+
 #ggsave("KUT_SON.png", width = 6, height = 4)
 
 
@@ -414,4 +441,15 @@ table(data$gender)
 ## test
 
 library(plotrix)
+
+jmv::corrMatrix(data, vars = c("KUT", "TECH_VERS", "INF_MAN"),
+                pearson = TRUE,
+                spearman = TRUE,
+                kendall = TRUE,
+                sig = TRUE,
+                flag = TRUE,
+                ci = FALSE,
+                ciWidth = 50,
+                plots = TRUE)
+
 
