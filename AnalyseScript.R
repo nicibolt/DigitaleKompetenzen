@@ -197,7 +197,6 @@ data <- transform(data, age_group=cut(data$age, breaks=c(-Inf, median(data$age),
 mancova(data, deps= c(TECH_VERS , INF_MAN), factors= c(age_group)) 
 
 
-
 #--> Müssen an dieser Stelle zwei Altersgruppen definiert werden? 
 
 ###Unteschiedshypothese 2:
