@@ -194,9 +194,6 @@ library(jmv)
 data <- transform(data, age_group=cut(data$age, breaks=c(-Inf, median(data$age), Inf), labels=c("low", "high")))
 mancova(data, deps= c(TECH_VERS , INF_MAN), factors= c(age_group)) 
 
-t.test(data$age_group, data$TECH_VERS, paired= TRUE)
-t.test(data$age, data$INF_MAN, paired= TRUE)
-
 
 
 #--> Müssen an dieser Stelle zwei Altersgruppen definiert werden? 
