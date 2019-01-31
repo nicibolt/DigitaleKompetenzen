@@ -407,6 +407,10 @@ ggplot(data = data) +
 cor.test(data=data,
          ~KUT+SON_USE)
 
+jmv::linReg(data=data, dep=KUT, covs=c("SON_USE"),
+            block=list(list("SON_USE")),
+            r2Adj=T, stdEst=T, anova=T)
+
 ggplot(data, aes(x = KUT, y = SON_USE)) +
   geom_point() +
   geom_smooth(method = "lm", se = FALSE, size = 0.5) +
