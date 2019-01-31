@@ -243,7 +243,7 @@ jmv::linReg(data=data, dep=KUT, covs=c("TECH_VERS", "INF_MAN"),
 
 #Korrelation zum Test > TECH_VERS erklärt den selben Anteil der Varianz
 #cor.test(data=data,          
-#        ~KUT+INF_MAN, method= "pearson")
+#        ~KUT+TECH_VERS, method= "pearson")
 
 jmv::linReg(data=data, dep=KUT, covs=c("TECH_VERS"),
             block=list(list("TECH_VERS")),
@@ -404,23 +404,20 @@ ggplot(data = data) +
 
 #ggsave("alter_SON.png", width = 6, height = 4)
 
+cor.test(data=data,
+         ~KUT+SON_USE)
+
 ggplot(data, aes(x = KUT, y = SON_USE)) +
   geom_point() +
+  geom_smooth(method = "lm", se = FALSE, size = 0.5) +
   xlim(1, 6) +
   ylim(1, 6) +
-  geom_smooth(method = "lm", se = FALSE, size = 0.5) +
-  labs(x = "Kontrollüberzeugung im Umgang mit Technik (KUT)", 
+  labs(x = "Kontrollüberzeugung im Umgang mit Technik (KUT)",
        y = "Umgang mit sozialen Online-Netzwerken",
-       title = expression(atop("Je höher die KUT, desto sicherer der Umgang",
-                               paste("mit sozialen Online-Netzwerken"))),
+       title = "Je höher die KUT, desto sicherer der Umgang mit sozialen Online-Netzwerken",
        subtitle = "Lineare Regression")
 
-
-
-
-#ggsave("KUT_SON.png", width = 6, height = 4)
-
-
+ggsave("KUT_SON.png", width = 8, height = 5)
 
 
 library(ggplot2)
